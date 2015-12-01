@@ -688,18 +688,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <containerView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V8l-tK-zf9">
+                            <containerView translatesAutoresizingMaskIntoConstraints="NO" id="V8l-tK-zf9">
                                 <rect key="frame" x="0.0" y="47" width="450" height="253"/>
                                 <animations/>
                                 <connections>
                                     <segue destination="iyp-IU-h62" kind="embed" id="1nE-R6-jyW"/>
                                 </connections>
                             </containerView>
-                            <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4ye-Cd-18a">
-                                <rect key="frame" x="0.0" y="0.0" width="450" height="49"/>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="4ye-Cd-18a">
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="50"/>
                                 <subviews>
                                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OqE-JH-SZg">
-                                        <rect key="frame" x="20" y="14" width="80" height="19"/>
+                                        <rect key="frame" x="20" y="15" width="80" height="19"/>
                                         <animations/>
                                         <buttonCell key="cell" type="roundRect" title="Round Rect" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="GR1-xd-GFN">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -707,9 +707,21 @@
                                         </buttonCell>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="WEs-Yf-GQF"/>
+                                </constraints>
                                 <animations/>
                             </customView>
                         </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="V8l-tK-zf9" secondAttribute="trailing" id="5xu-Go-4gc"/>
+                            <constraint firstAttribute="bottom" secondItem="4ye-Cd-18a" secondAttribute="bottom" id="6GF-Dm-ag1"/>
+                            <constraint firstItem="V8l-tK-zf9" firstAttribute="leading" secondItem="gCx-Ri-J7C" secondAttribute="leading" id="CLh-af-L6Z"/>
+                            <constraint firstAttribute="trailing" secondItem="4ye-Cd-18a" secondAttribute="trailing" id="PPo-Xy-eLE"/>
+                            <constraint firstItem="V8l-tK-zf9" firstAttribute="top" secondItem="gCx-Ri-J7C" secondAttribute="top" id="Uo5-p0-7RC"/>
+                            <constraint firstItem="4ye-Cd-18a" firstAttribute="top" secondItem="V8l-tK-zf9" secondAttribute="bottom" constant="-3" id="aZ3-hZ-rSe"/>
+                            <constraint firstItem="4ye-Cd-18a" firstAttribute="leading" secondItem="gCx-Ri-J7C" secondAttribute="leading" id="obV-Lr-Pun"/>
+                        </constraints>
                         <animations/>
                     </view>
                 </viewController>
@@ -747,7 +759,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L06-pi-eRk">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="L06-pi-eRk">
                                 <rect key="frame" x="211" y="142" width="28" height="17"/>
                                 <animations/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Left" id="3Vg-CP-tEB">
@@ -757,6 +769,10 @@
                                 </textFieldCell>
                             </textField>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="L06-pi-eRk" firstAttribute="centerY" secondItem="uTf-25-edR" secondAttribute="centerY" id="OPT-Xc-VSd"/>
+                            <constraint firstItem="L06-pi-eRk" firstAttribute="centerX" secondItem="uTf-25-edR" secondAttribute="centerX" id="Usr-Us-R1D"/>
+                        </constraints>
                         <animations/>
                     </view>
                 </viewController>
@@ -772,7 +788,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JTn-9G-XNl">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JTn-9G-XNl">
                                 <rect key="frame" x="207" y="142" width="36" height="17"/>
                                 <animations/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Right" id="NYl-fu-Gno">
@@ -782,6 +798,10 @@
                                 </textFieldCell>
                             </textField>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="JTn-9G-XNl" firstAttribute="centerX" secondItem="O79-Sc-s1v" secondAttribute="centerX" id="ZY9-Xb-hhm"/>
+                            <constraint firstItem="JTn-9G-XNl" firstAttribute="centerY" secondItem="O79-Sc-s1v" secondAttribute="centerY" id="dG1-tT-yks"/>
+                        </constraints>
                         <animations/>
                     </view>
                 </viewController>
