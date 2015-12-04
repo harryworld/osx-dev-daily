@@ -8,10 +8,13 @@
 
 import Cocoa
 
-class ViewController: NSViewController, NSTableViewDataSource {
+class ViewController: NSViewController, NSTableViewDataSource, NSTextFieldDelegate {
     
-    let strings = ["apple", "banana", "orange", "watermelon"]
+    var strings = ["apple", "banana", "orange", "watermelon"]
 
+    @IBOutlet weak var textField: NSTextField!
+    @IBOutlet weak var tableView: NSTableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,6 +27,13 @@ class ViewController: NSViewController, NSTableViewDataSource {
         }
     }
 
+    @IBAction func addFruit(sender: AnyObject?) {
+        let string = textField.stringValue
+        strings.append(string)
+        textField.stringValue = ""
+        tableView.reloadData()
+    }
+    
     // MARK: DataSource
     
     func numberOfRowsInTableView(tableView: NSTableView) -> Int {
@@ -32,6 +42,12 @@ class ViewController: NSViewController, NSTableViewDataSource {
     
     func tableView(tableView: NSTableView, objectValueForTableColumn tableColumn: NSTableColumn?, row: Int) -> AnyObject? {
         return strings[row]
+    }
+    
+    // MARK: Delegate
+    
+    override func controlTextDidEndEditing(obj: NSNotification) {
+        addFruit(nil)
     }
 
 }
