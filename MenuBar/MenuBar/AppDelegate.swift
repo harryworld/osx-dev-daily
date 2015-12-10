@@ -13,6 +13,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(NSVariableStatusItemLength)
     let popover = NSPopover()
+    var eventMonitor: EventMonitor?
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
@@ -22,19 +23,35 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         
         popover.contentViewController = WeatherViewController.loadFromNib()
+        
+        eventMonitor = EventMonitor(mask: [.LeftMouseUpMask, .RightMouseUpMask], handler: { (event) -> () in
+            if self.popover.shown {
+                self.closePopover(event)
+            }
+        })
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
         // Insert code here to tear down your application
     }
     
+    func showPopover(sender: AnyObject?) {
+        if let button = statusItem.button {
+            popover.showRelativeToRect(button.bounds, ofView: button, preferredEdge: .MinY)
+        }
+        eventMonitor?.start()
+    }
+    
+    func closePopover(sender: AnyObject?) {
+        popover.performClose(sender)
+        eventMonitor?.stop()
+    }
+    
     func toggleWeather(sender: NSStatusBarButton) {
         if popover.shown {
-            popover.performClose(sender)
+            closePopover(sender)
         } else {
-            if let button = statusItem.button {
-                popover.showRelativeToRect(button.bounds, ofView: button, preferredEdge: .MinY)
-            }
+            showPopover(sender)
         }
     }
 

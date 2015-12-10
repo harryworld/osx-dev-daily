@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D169D10B1C19C4E0002F62D6 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D169D10A1C19C4E0002F62D6 /* EventMonitor.swift */; };
 		D1DFEF841C172493000B9991 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DFEF831C172493000B9991 /* AppDelegate.swift */; };
 		D1DFEF861C172493000B9991 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DFEF851C172493000B9991 /* ViewController.swift */; };
 		D1DFEF881C172493000B9991 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1DFEF871C172493000B9991 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D169D10A1C19C4E0002F62D6 /* EventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
 		D1DFEF801C172493000B9991 /* MenuBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1DFEF831C172493000B9991 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1DFEF851C172493000B9991 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				D1DFEF891C172493000B9991 /* Main.storyboard */,
 				D1DFEF8C1C172493000B9991 /* Info.plist */,
 				D1DFEFAE1C172759000B9991 /* WeatherViewController.swift */,
+				D169D10A1C19C4E0002F62D6 /* EventMonitor.swift */,
 			);
 			path = MenuBar;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 				D1DFEF861C172493000B9991 /* ViewController.swift in Sources */,
 				D1DFEFAF1C172759000B9991 /* WeatherViewController.swift in Sources */,
 				D1DFEF841C172493000B9991 /* AppDelegate.swift in Sources */,
+				D169D10B1C19C4E0002F62D6 /* EventMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +483,7 @@
 				D1DFEFA71C172493000B9991 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D1DFEFA81C172493000B9991 /* Build configuration list for PBXNativeTarget "MenuBarTests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +492,7 @@
 				D1DFEFAA1C172493000B9991 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D1DFEFAB1C172493000B9991 /* Build configuration list for PBXNativeTarget "MenuBarUITests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +501,7 @@
 				D1DFEFAD1C172493000B9991 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
