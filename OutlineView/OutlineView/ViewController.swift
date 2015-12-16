@@ -20,6 +20,8 @@ class ViewController: NSViewController, NSOutlineViewDataSource, NSOutlineViewDe
         addData()
         
         outlineView.expandItem(nil, expandChildren: true)
+        
+        outlineView.registerForDraggedTypes([NSPasteboardTypeString])
     }
 
     override var representedObject: AnyObject? {
@@ -34,7 +36,11 @@ class ViewController: NSViewController, NSOutlineViewDataSource, NSOutlineViewDe
             "isLeaf": false
         ]
         let dict: NSMutableDictionary = NSMutableDictionary(dictionary: root)
-        dict.setObject([Playlist(), Playlist()], forKey: "children")
+        let p1 = Playlist()
+        p1.name = "P1"
+        let p2 = Playlist()
+        p2.name = "P2"
+        dict.setObject([p1, p2], forKey: "children")
         treeController.addObject(dict)
     }
     
@@ -56,6 +62,55 @@ class ViewController: NSViewController, NSOutlineViewDataSource, NSOutlineViewDe
         } else {
             return outlineView.makeViewWithIdentifier("DataCell", owner: self)
         }
+    }
+    
+    // MARK: - DataSource
+    
+    func outlineView(outlineView: NSOutlineView, pasteboardWriterForItem item: AnyObject) -> NSPasteboardWriting? {
+        let pbItem = NSPasteboardItem()
+        
+        if let playlist = ((item as? NSTreeNode)?.representedObject) as? Playlist {
+            pbItem.setString(playlist.name, forType: NSPasteboardTypeString)
+            return pbItem
+        }
+        
+        return nil
+    }
+    
+    func outlineView(outlineView: NSOutlineView, validateDrop info: NSDraggingInfo, proposedItem item: AnyObject?, proposedChildIndex index: Int) -> NSDragOperation {
+        let canDrag = index >= 0 && item != nil
+        
+        if canDrag {
+            return .Move
+        } else {
+            return .None
+        }
+    }
+    
+    func outlineView(outlineView: NSOutlineView, acceptDrop info: NSDraggingInfo, item: AnyObject?, childIndex index: Int) -> Bool {
+        let pb = info.draggingPasteboard()
+        let name = pb.stringForType(NSPasteboardTypeString)
+        
+        var sourceNode: NSTreeNode?
+        
+        if let item = item as? NSTreeNode where item.childNodes != nil {
+            for node in item.childNodes! {
+                if let playlist = node.representedObject as? Playlist {
+                    if playlist.name == name {
+                        sourceNode = node
+                    }
+                }
+            }
+        }
+        if sourceNode == nil {
+            return false
+        }
+        
+        let indexArr: [Int] = [0, index]
+        let toIndexPath = NSIndexPath(indexes: indexArr, length: 2)
+        treeController.moveNode(sourceNode!, toIndexPath: toIndexPath)
+        
+        return true
     }
 }
 
