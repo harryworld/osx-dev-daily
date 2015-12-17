@@ -106,11 +106,20 @@ class ViewController: NSViewController, NSOutlineViewDataSource, NSOutlineViewDe
             return false
         }
         
+        let fromIndexPath = treeController.selectionIndexPath
+        
         let indexArr: [Int] = [0, index]
         let toIndexPath = NSIndexPath(indexes: indexArr, length: 2)
         treeController.moveNode(sourceNode!, toIndexPath: toIndexPath)
         
+        undoManager?.prepareWithInvocationTarget(self).reverse(sourceNode, fromIndexPath: fromIndexPath)
+        undoManager?.setActionName("Move")
+        
         return true
+    }
+    
+    func reverse(sourceNode: NSTreeNode?, fromIndexPath: NSIndexPath?) {
+        treeController.moveNode(sourceNode!, toIndexPath: fromIndexPath!)
     }
 }
 
