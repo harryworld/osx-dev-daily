@@ -21,6 +21,8 @@ class ViewController: NSViewController, NSOutlineViewDataSource, NSOutlineViewDe
         
         outlineView.expandItem(nil, expandChildren: true)
         
+        outlineView.deselectRow(0)
+        
         outlineView.registerForDraggedTypes([NSPasteboardTypeString])
     }
 
@@ -62,6 +64,18 @@ class ViewController: NSViewController, NSOutlineViewDataSource, NSOutlineViewDe
         } else {
             return outlineView.makeViewWithIdentifier("DataCell", owner: self)
         }
+    }
+    
+    func outlineView(outlineView: NSOutlineView, isGroupItem item: AnyObject) -> Bool {
+        return isHeader(true)
+    }
+    
+    func outlineView(outlineView: NSOutlineView, shouldSelectItem item: AnyObject) -> Bool {
+        return !isHeader(item)
+    }
+    
+    func outlineView(outlineView: NSOutlineView, shouldShowOutlineCellForItem item: AnyObject) -> Bool {
+        return !isHeader(item)
     }
     
     // MARK: - DataSource
