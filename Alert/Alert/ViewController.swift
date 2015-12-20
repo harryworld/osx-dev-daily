@@ -33,17 +33,19 @@ class ViewController: NSViewController {
         alert.addButtonWithTitle("Default")
         alert.addButtonWithTitle("Alternative")
         alert.addButtonWithTitle("Other")
-        let result = alert.runModal()
         
-        switch result {
-        case NSAlertFirstButtonReturn:
-            print("first button")
-        case NSAlertSecondButtonReturn:
-            print("second button")
-        case NSAlertThirdButtonReturn:
-            print("third button")
-        default:
-            break
+        alert.beginSheetModalForWindow(view.window!) { (response) -> Void in
+            print("The user selected \(response)")
+            switch response {
+            case NSAlertFirstButtonReturn:
+                print("first button")
+            case NSAlertSecondButtonReturn:
+                print("second button")
+            case NSAlertThirdButtonReturn:
+                print("third button")
+            default:
+                break
+            }
         }
     }
 
