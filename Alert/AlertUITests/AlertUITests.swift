@@ -37,6 +37,7 @@ class AlertUITests: XCTestCase {
         window.buttons["Alert"].click()
         window.sheets["alert"].buttons["Default"].click()
         
+        XCTAssert(window.staticTexts["first button"].exists)
     }
     
 }
