@@ -31,6 +31,12 @@ class AlertUITests: XCTestCase {
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        
+        let window = XCUIApplication().windows["Window"]
+        window.buttons["Alert"].click()
+        window.sheets["alert"].buttons["Default"].click()
+        
     }
     
 }

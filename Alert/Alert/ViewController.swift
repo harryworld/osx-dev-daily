@@ -10,6 +10,8 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    @IBOutlet weak var label: NSTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,13 +19,17 @@ class ViewController: NSViewController {
     }
     
     override func viewDidAppear() {
-        alert()
+        
     }
 
     override var representedObject: AnyObject? {
         didSet {
         // Update the view, if already loaded.
         }
+    }
+    
+    @IBAction func showAlert(sender: NSButton) {
+        alert()
     }
     
     func alert() {
@@ -39,10 +45,13 @@ class ViewController: NSViewController {
             switch response {
             case NSAlertFirstButtonReturn:
                 print("first button")
+                self.label.stringValue = "first button"
             case NSAlertSecondButtonReturn:
                 print("second button")
+                self.label.stringValue = "second button"
             case NSAlertThirdButtonReturn:
                 print("third button")
+                self.label.stringValue = "third button"
             default:
                 break
             }
