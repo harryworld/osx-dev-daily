@@ -13,6 +13,9 @@
 		D148030C1C26E2E500039DA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D148030A1C26E2E500039DA6 /* Main.storyboard */; };
 		D14803171C26E2E500039DA6 /* AlertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14803161C26E2E500039DA6 /* AlertTests.swift */; };
 		D14803221C26E2E500039DA6 /* AlertUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14803211C26E2E500039DA6 /* AlertUITests.swift */; };
+		D1A7D2721C29AC7C005F1BBB /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A7D2711C29AC7C005F1BBB /* Song.swift */; };
+		D1A7D2741C29ACF4005F1BBB /* SongTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A7D2731C29ACF4005F1BBB /* SongTests.swift */; };
+		D1A7D2761C29AD6B005F1BBB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A7D2751C29AD6B005F1BBB /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		D148031D1C26E2E500039DA6 /* AlertUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlertUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D14803211C26E2E500039DA6 /* AlertUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertUITests.swift; sourceTree = "<group>"; };
 		D14803231C26E2E500039DA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1A7D2711C29AC7C005F1BBB /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		D1A7D2731C29ACF4005F1BBB /* SongTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongTests.swift; sourceTree = "<group>"; };
+		D1A7D2751C29AD6B005F1BBB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,7 @@
 				D14803081C26E2E500039DA6 /* Assets.xcassets */,
 				D148030A1C26E2E500039DA6 /* Main.storyboard */,
 				D148030D1C26E2E500039DA6 /* Info.plist */,
+				D1A7D2711C29AC7C005F1BBB /* Song.swift */,
 			);
 			path = Alert;
 			sourceTree = "<group>";
@@ -109,6 +116,8 @@
 			children = (
 				D14803161C26E2E500039DA6 /* AlertTests.swift */,
 				D14803181C26E2E500039DA6 /* Info.plist */,
+				D1A7D2731C29ACF4005F1BBB /* SongTests.swift */,
+				D1A7D2751C29AD6B005F1BBB /* Constants.swift */,
 			);
 			path = AlertTests;
 			sourceTree = "<group>";
@@ -252,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1A7D2721C29AC7C005F1BBB /* Song.swift in Sources */,
 				D14803071C26E2E500039DA6 /* ViewController.swift in Sources */,
 				D14803051C26E2E500039DA6 /* AppDelegate.swift in Sources */,
 			);
@@ -261,7 +271,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1A7D2741C29ACF4005F1BBB /* SongTests.swift in Sources */,
 				D14803171C26E2E500039DA6 /* AlertTests.swift in Sources */,
+				D1A7D2761C29AD6B005F1BBB /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +487,7 @@
 				D14803281C26E2E500039DA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D14803291C26E2E500039DA6 /* Build configuration list for PBXNativeTarget "AlertTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +496,7 @@
 				D148032B1C26E2E500039DA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D148032C1C26E2E500039DA6 /* Build configuration list for PBXNativeTarget "AlertUITests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +505,7 @@
 				D148032E1C26E2E500039DA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
