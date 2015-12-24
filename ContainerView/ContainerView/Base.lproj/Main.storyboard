@@ -707,7 +707,7 @@
         <!--Left-->
         <scene sceneID="Xzq-o9-YSf">
             <objects>
-                <viewController title="Left" id="5WZ-jV-y2y" sceneMemberID="viewController">
+                <viewController title="Left" id="5WZ-jV-y2y" customClass="SidebarViewController" customModule="ContainerView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="pvR-Mg-PQ1">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -734,7 +734,7 @@
         <!--Right-->
         <scene sceneID="7XY-Tq-EEq">
             <objects>
-                <viewController title="Right" id="I8M-C6-IM7" sceneMemberID="viewController">
+                <viewController title="Right" id="I8M-C6-IM7" customClass="MainViewController" customModule="ContainerView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="CgO-1s-fDe">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
