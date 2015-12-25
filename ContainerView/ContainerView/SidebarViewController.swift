@@ -43,4 +43,7 @@ class SidebarViewController: NSViewController {
         print("viewDidDisappear")
     }
     
+    @IBAction func click(sender: NSButton) {
+        NSNotificationCenter.defaultCenter().postNotificationName("click", object: self)
+    }
 }

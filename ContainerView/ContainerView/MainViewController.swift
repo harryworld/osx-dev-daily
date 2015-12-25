@@ -10,10 +10,20 @@ import Cocoa
 
 class MainViewController: NSViewController {
 
+    @IBOutlet weak var label: NSTextField!
+    private var numberOfClicks = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
         print("Main")
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "display:", name: "click", object: nil)
+    }
+    
+    func display(notification: NSNotification) {
+        numberOfClicks++
+        label.stringValue = "Click \(numberOfClicks) times"
     }
     
 }

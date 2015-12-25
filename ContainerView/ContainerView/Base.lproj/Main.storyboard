@@ -712,18 +712,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pT7-Ui-EY5">
-                                <rect key="frame" x="211" y="142" width="28" height="17"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Left" id="Tw0-bO-nUD">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gb7-gp-cHN">
+                                <rect key="frame" x="190" y="133" width="70" height="32"/>
+                                <buttonCell key="cell" type="push" title="Click" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="vIc-XJ-m6e">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="click:" target="5WZ-jV-y2y" id="6GV-Yd-thc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="pT7-Ui-EY5" firstAttribute="centerY" secondItem="pvR-Mg-PQ1" secondAttribute="centerY" id="YNG-BS-UHi"/>
-                            <constraint firstItem="pT7-Ui-EY5" firstAttribute="centerX" secondItem="pvR-Mg-PQ1" secondAttribute="centerX" id="u62-YD-hB3"/>
+                            <constraint firstItem="gb7-gp-cHN" firstAttribute="centerY" secondItem="pvR-Mg-PQ1" secondAttribute="centerY" id="BEH-rl-S0X"/>
+                            <constraint firstItem="gb7-gp-cHN" firstAttribute="centerX" secondItem="pvR-Mg-PQ1" secondAttribute="centerX" id="Bbd-UC-Cx8"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -740,8 +742,11 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="RmG-pb-Iht">
-                                <rect key="frame" x="207" y="142" width="36" height="17"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Right" id="GKw-kA-4ki">
+                                <rect key="frame" x="173" y="142" width="104" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="IJG-e9-ODj"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Click 0 times" id="GKw-kA-4ki">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -753,6 +758,9 @@
                             <constraint firstItem="RmG-pb-Iht" firstAttribute="centerY" secondItem="CgO-1s-fDe" secondAttribute="centerY" id="baW-yH-PfY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="RmG-pb-Iht" id="a8a-MV-cy5"/>
+                    </connections>
                 </viewController>
                 <customObject id="vQ7-8o-H4J" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
