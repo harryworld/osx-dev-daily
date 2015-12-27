@@ -44,6 +44,6 @@ class SidebarViewController: NSViewController {
     }
     
     @IBAction func click(sender: NSButton) {
-        NSNotificationCenter.defaultCenter().postNotificationName("click", object: self)
+        NSNotificationCenter.defaultCenter().postNotificationName(CVNotifications.Click.rawValue, object: self)
     }
 }

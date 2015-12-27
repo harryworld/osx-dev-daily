@@ -18,7 +18,7 @@ class MainViewController: NSViewController {
         // Do view setup here.
         print("Main")
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "display:", name: "click", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "display:", name: CVNotifications.Click.rawValue, object: nil)
     }
     
     func display(notification: NSNotification) {
