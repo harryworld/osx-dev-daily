@@ -10,6 +10,8 @@ import Cocoa
 
 class SidebarViewController: NSViewController {
 
+    @IBOutlet weak var button: NSButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
@@ -44,6 +46,12 @@ class SidebarViewController: NSViewController {
     }
     
     @IBAction func click(sender: NSButton) {
-        NSNotificationCenter.defaultCenter().postNotificationName(CVNotifications.Click.rawValue, object: self)
+//        NSNotificationCenter.defaultCenter().postNotificationName(CVNotifications.Click.rawValue, object: self)
+        let vc = NSStoryboard(name: "Main", bundle: nil).instantiateControllerWithIdentifier("Popover") as! NSViewController
+        
+        let popover = NSPopover()
+        popover.behavior = .Transient
+        popover.contentViewController = vc
+        popover.showRelativeToRect(button.bounds, ofView: button, preferredEdge: .MaxX)
     }
 }

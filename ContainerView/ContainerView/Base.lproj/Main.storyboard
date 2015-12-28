@@ -728,10 +728,43 @@
                             <constraint firstItem="gb7-gp-cHN" firstAttribute="centerX" secondItem="pvR-Mg-PQ1" secondAttribute="centerX" id="Bbd-UC-Cx8"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="gb7-gp-cHN" id="Tsa-dj-MF9"/>
+                    </connections>
                 </viewController>
                 <customObject id="4hr-xm-6LL" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-175" y="1162"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="n9Z-nC-ztU">
+            <objects>
+                <viewController storyboardIdentifier="Popover" id="3RU-Sv-H3v" sceneMemberID="viewController">
+                    <view key="view" id="JUg-Na-hIC">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ai3-l7-DsL">
+                                <rect key="frame" x="20" y="39" width="120" height="22"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="cWg-7a-FG1">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bve-T0-CPV">
+                                <rect key="frame" x="156" y="38" width="24" height="24"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSAddTemplate" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="wjb-5L-cUT">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                        </subviews>
+                    </view>
+                </viewController>
+                <customObject id="iSJ-9O-oEd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-175" y="1439"/>
         </scene>
         <!--Right-->
         <scene sceneID="7XY-Tq-EEq">
@@ -767,4 +800,7 @@
             <point key="canvasLocation" x="320" y="1162"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="NSAddTemplate" width="11" height="11"/>
+    </resources>
 </document>
