@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D113E00B1C32E4F0004F3C76 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D113E0091C32E4F0004F3C76 /* PopoverViewController.swift */; };
+		D113E00C1C32E4F0004F3C76 /* PopoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D113E00A1C32E4F0004F3C76 /* PopoverViewController.xib */; };
 		D121F0781C2C2CE900820131 /* SidebarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D121F0771C2C2CE900820131 /* SidebarViewController.swift */; };
 		D121F07A1C2C2CF700820131 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D121F0791C2C2CF700820131 /* MainViewController.swift */; };
 		D14601981C30361400154F59 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14601971C30361400154F59 /* Constants.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D113E0091C32E4F0004F3C76 /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
+		D113E00A1C32E4F0004F3C76 /* PopoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopoverViewController.xib; sourceTree = "<group>"; };
 		D121F0771C2C2CE900820131 /* SidebarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidebarViewController.swift; sourceTree = "<group>"; };
 		D121F0791C2C2CF700820131 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D14601971C30361400154F59 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 				D121F0771C2C2CE900820131 /* SidebarViewController.swift */,
 				D121F0791C2C2CF700820131 /* MainViewController.swift */,
 				D14601971C30361400154F59 /* Constants.swift */,
+				D113E0091C32E4F0004F3C76 /* PopoverViewController.swift */,
+				D113E00A1C32E4F0004F3C76 /* PopoverViewController.xib */,
 			);
 			path = ContainerView;
 			sourceTree = "<group>";
@@ -237,6 +243,7 @@
 			files = (
 				D179C8561C2AEF5A00E3B3E8 /* Assets.xcassets in Resources */,
 				D179C8591C2AEF5A00E3B3E8 /* Main.storyboard in Resources */,
+				D113E00C1C32E4F0004F3C76 /* PopoverViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +272,7 @@
 				D179C8541C2AEF5A00E3B3E8 /* ViewController.swift in Sources */,
 				D121F0781C2C2CE900820131 /* SidebarViewController.swift in Sources */,
 				D179C8521C2AEF5A00E3B3E8 /* AppDelegate.swift in Sources */,
+				D113E00B1C32E4F0004F3C76 /* PopoverViewController.swift in Sources */,
 				D121F07A1C2C2CF700820131 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
