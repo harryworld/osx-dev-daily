@@ -46,12 +46,7 @@ class SidebarViewController: NSViewController {
     }
     
     @IBAction func click(sender: NSButton) {
-//        NSNotificationCenter.defaultCenter().postNotificationName(CVNotifications.Click.rawValue, object: self)
-        let vc = NSStoryboard(name: "Main", bundle: nil).instantiateControllerWithIdentifier("Popover") as! NSViewController
-        
-        let popover = NSPopover()
-        popover.behavior = .Transient
-        popover.contentViewController = vc
-        popover.showRelativeToRect(button.bounds, ofView: button, preferredEdge: .MaxX)
+        let vc = PopoverViewController.loadFromNib()
+        vc.showPopover(sender)
     }
 }
