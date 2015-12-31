@@ -13,3 +13,7 @@ enum CVNotifications : String {
     case Press = "com.stayrealhk.ContainerView.press"
     case Tap = "com.stayrealhk.ContainerView.tap"
 }
+
+enum CVNotificationsUserInfo : String {
+    case Content = "content"
+}

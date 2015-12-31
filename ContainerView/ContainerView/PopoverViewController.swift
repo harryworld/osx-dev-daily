@@ -11,6 +11,7 @@ import Cocoa
 class PopoverViewController: NSViewController {
 
     let popover = NSPopover()
+    @IBOutlet weak var textField: NSTextField!
     
     class func loadFromNib() -> PopoverViewController {
         let vc = NSStoryboard(name: "Main", bundle: nil).instantiateControllerWithIdentifier("Popover") as! PopoverViewController
@@ -30,7 +31,9 @@ class PopoverViewController: NSViewController {
     }
     
     @IBAction func click(sender: NSButton) {
-        NSNotificationCenter.defaultCenter().postNotificationName(CVNotifications.Click.rawValue, object: self)
+        let content = textField.stringValue
+        
+        NSNotificationCenter.defaultCenter().postNotificationName(CVNotifications.Click.rawValue, object: self, userInfo: [CVNotificationsUserInfo.Content.rawValue: content])
         
         // Dismiss popover
         popover.performClose(sender)

@@ -764,6 +764,9 @@
                             </button>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="Ai3-l7-DsL" id="hWq-nY-CNe"/>
+                    </connections>
                 </viewController>
                 <customObject id="iSJ-9O-oEd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

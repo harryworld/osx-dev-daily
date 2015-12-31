@@ -22,8 +22,12 @@ class MainViewController: NSViewController {
     }
     
     func display(notification: NSNotification) {
-        numberOfClicks++
-        label.stringValue = "Click \(numberOfClicks) times"
+        if let content = notification.userInfo?[CVNotificationsUserInfo.Content.rawValue] as? String where content != "" {
+            label.stringValue = content
+        } else {
+            numberOfClicks++
+            label.stringValue = "Click \(numberOfClicks) times"
+        }
     }
     
 }
