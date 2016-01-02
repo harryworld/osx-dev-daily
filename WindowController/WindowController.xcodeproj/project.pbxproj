@@ -13,6 +13,7 @@
 		D113E0911C36CAE9004F3C76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D113E08F1C36CAE9004F3C76 /* Main.storyboard */; };
 		D113E09C1C36CAE9004F3C76 /* WindowControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D113E09B1C36CAE9004F3C76 /* WindowControllerTests.swift */; };
 		D113E0A71C36CAE9004F3C76 /* WindowControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D113E0A61C36CAE9004F3C76 /* WindowControllerUITests.swift */; };
+		D113E0BB1C37DE61004F3C76 /* FirstTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D113E0BA1C37DE61004F3C76 /* FirstTabViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		D113E0A21C36CAE9004F3C76 /* WindowControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WindowControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D113E0A61C36CAE9004F3C76 /* WindowControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowControllerUITests.swift; sourceTree = "<group>"; };
 		D113E0A81C36CAE9004F3C76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D113E0BA1C37DE61004F3C76 /* FirstTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstTabViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			children = (
 				D113E0891C36CAE8004F3C76 /* AppDelegate.swift */,
 				D113E08B1C36CAE9004F3C76 /* ViewController.swift */,
+				D113E0BA1C37DE61004F3C76 /* FirstTabViewController.swift */,
 				D113E08D1C36CAE9004F3C76 /* Assets.xcassets */,
 				D113E08F1C36CAE9004F3C76 /* Main.storyboard */,
 				D113E0921C36CAE9004F3C76 /* Info.plist */,
@@ -252,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D113E0BB1C37DE61004F3C76 /* FirstTabViewController.swift in Sources */,
 				D113E08C1C36CAE9004F3C76 /* ViewController.swift in Sources */,
 				D113E08A1C36CAE9004F3C76 /* AppDelegate.swift in Sources */,
 			);
@@ -475,6 +479,7 @@
 				D113E0AD1C36CAE9004F3C76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D113E0AE1C36CAE9004F3C76 /* Build configuration list for PBXNativeTarget "WindowControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +488,7 @@
 				D113E0B01C36CAE9004F3C76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D113E0B11C36CAE9004F3C76 /* Build configuration list for PBXNativeTarget "WindowControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +497,7 @@
 				D113E0B31C36CAE9004F3C76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
