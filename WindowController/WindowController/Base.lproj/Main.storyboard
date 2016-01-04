@@ -584,25 +584,6 @@
                                     </items>
                                 </menu>
                             </menuItem>
-                            <menuItem title="View" id="H8h-7b-M4v">
-                                <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="View" id="HyV-fh-RgO">
-                                    <items>
-                                        <menuItem title="Show Toolbar" keyEquivalent="t" id="snW-S8-Cw5">
-                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
-                                            <connections>
-                                                <action selector="toggleToolbarShown:" target="Ady-hI-5gd" id="BXY-wc-z0C"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem title="Customize Toolbar…" id="1UK-8n-QPP">
-                                            <modifierMask key="keyEquivalentModifierMask"/>
-                                            <connections>
-                                                <action selector="runToolbarCustomizationPalette:" target="Ady-hI-5gd" id="pQI-g3-MTW"/>
-                                            </connections>
-                                        </menuItem>
-                                    </items>
-                                </menu>
-                            </menuItem>
                             <menuItem title="Window" id="aUF-d1-5bR">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Window" systemMenu="window" id="Td7-aD-5lo">
@@ -660,20 +641,37 @@
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
-                        <toolbar key="toolbar" implicitIdentifier="137F6A91-B8E5-4226-BF08-6E65C1A02FE5" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="RYz-OL-rQC">
+                        <toolbar key="toolbar" implicitIdentifier="137F6A91-B8E5-4226-BF08-6E65C1A02FE5" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="small" id="RYz-OL-rQC">
                             <allowedToolbarItems>
                                 <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="Rwl-1D-G3f"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="u0f-XE-tAw"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="Tx6-TS-k3D"/>
-                                <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="yxZ-If-WHF"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="isC-Yv-ydA"/>
                                 <toolbarItem implicitItemIdentifier="D29F564B-BC93-4554-AE8A-1711A2B0ACF0" label="Settings" paletteLabel="Settings" tag="-1" image="NSActionTemplate" id="v2L-l6-5RX">
                                     <connections>
                                         <segue destination="MRd-J0-hkr" kind="sheet" id="EqK-vo-cuZ"/>
                                     </connections>
                                 </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="28E866B6-3F30-477C-B2DE-AC91BE6AF298" label="Custom View" paletteLabel="Custom View" id="zlJ-dk-epw">
+                                    <nil key="toolTip"/>
+                                    <size key="minSize" width="38" height="17"/>
+                                    <size key="maxSize" width="115" height="17"/>
+                                    <textField key="view" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="fpY-7q-SU9">
+                                        <rect key="frame" x="0.0" y="14" width="114" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="WindowController" id="nFN-2k-474">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="DOa-Ia-qrK"/>
                             </allowedToolbarItems>
                             <defaultToolbarItems>
+                                <toolbarItem reference="DOa-Ia-qrK"/>
+                                <toolbarItem reference="isC-Yv-ydA"/>
+                                <toolbarItem reference="zlJ-dk-epw"/>
                                 <toolbarItem reference="isC-Yv-ydA"/>
                                 <toolbarItem reference="v2L-l6-5RX"/>
                             </defaultToolbarItems>
@@ -1034,6 +1032,6 @@ Gw
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Glh-bT-JX2"/>
-        <segue reference="EqK-vo-cuZ"/>
+        <segue reference="SEL-Sk-z2G"/>
     </inferredMetricsTieBreakers>
 </document>
