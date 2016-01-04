@@ -14,6 +14,7 @@
 		D113E09C1C36CAE9004F3C76 /* WindowControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D113E09B1C36CAE9004F3C76 /* WindowControllerTests.swift */; };
 		D113E0A71C36CAE9004F3C76 /* WindowControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D113E0A61C36CAE9004F3C76 /* WindowControllerUITests.swift */; };
 		D113E0BB1C37DE61004F3C76 /* FirstTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D113E0BA1C37DE61004F3C76 /* FirstTabViewController.swift */; };
+		D1798BE61C3ACDD800277038 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1798BE41C3ACDD800277038 /* WindowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		D113E0A61C36CAE9004F3C76 /* WindowControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowControllerUITests.swift; sourceTree = "<group>"; };
 		D113E0A81C36CAE9004F3C76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D113E0BA1C37DE61004F3C76 /* FirstTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstTabViewController.swift; sourceTree = "<group>"; };
+		D1798BE41C3ACDD800277038 /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				D113E0891C36CAE8004F3C76 /* AppDelegate.swift */,
+				D1798BE41C3ACDD800277038 /* WindowController.swift */,
 				D113E08B1C36CAE9004F3C76 /* ViewController.swift */,
 				D113E0BA1C37DE61004F3C76 /* FirstTabViewController.swift */,
 				D113E08D1C36CAE9004F3C76 /* Assets.xcassets */,
@@ -256,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D113E0BB1C37DE61004F3C76 /* FirstTabViewController.swift in Sources */,
+				D1798BE61C3ACDD800277038 /* WindowController.swift in Sources */,
 				D113E08C1C36CAE9004F3C76 /* ViewController.swift in Sources */,
 				D113E08A1C36CAE9004F3C76 /* AppDelegate.swift in Sources */,
 			);
