@@ -637,11 +637,11 @@
             <objects>
                 <windowController id="B8D-0N-5wS" customClass="WindowController" customModule="WindowController" customModuleProvider="target" sceneMemberID="viewController">
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" fullSizeContentView="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
-                        <toolbar key="toolbar" implicitIdentifier="137F6A91-B8E5-4226-BF08-6E65C1A02FE5" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="small" id="RYz-OL-rQC">
+                        <toolbar key="toolbar" implicitIdentifier="137F6A91-B8E5-4226-BF08-6E65C1A02FE5" autosavesConfiguration="NO" prefersToBeShown="NO" displayMode="iconAndLabel" sizeMode="small" id="RYz-OL-rQC">
                             <allowedToolbarItems>
                                 <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="Rwl-1D-G3f"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="u0f-XE-tAw"/>
@@ -864,19 +864,27 @@ Gw
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqu-j4-YFv">
-                                <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="280"/>
                                 <clipView key="contentView" id="o9c-on-Wqh">
-                                    <rect key="frame" x="1" y="1" width="198" height="298"/>
+                                    <rect key="frame" x="1" y="1" width="198" height="278"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="lfk-Pc-NEr">
-                                            <rect key="frame" x="0.0" y="0.0" width="198" height="298"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="198" height="278"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <size key="minSize" width="198" height="298"/>
+                                            <size key="minSize" width="198" height="278"/>
                                             <size key="maxSize" width="463" height="10000000"/>
+                                            <attributedString key="textStorage">
+                                                <fragment content="Default Text">
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="smallSystem"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
                                             <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                            <size key="minSize" width="198" height="298"/>
+                                            <size key="minSize" width="198" height="278"/>
                                             <size key="maxSize" width="463" height="10000000"/>
                                         </textView>
                                     </subviews>
@@ -890,13 +898,13 @@ Gw
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="gVo-Bo-2zT">
-                                    <rect key="frame" x="183" y="1" width="16" height="298"/>
+                                    <rect key="frame" x="183" y="1" width="16" height="278"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="dqu-j4-YFv" firstAttribute="top" secondItem="hd0-rz-0Cl" secondAttribute="top" id="44h-od-Bay"/>
+                            <constraint firstItem="dqu-j4-YFv" firstAttribute="top" secondItem="hd0-rz-0Cl" secondAttribute="top" constant="20" id="44h-od-Bay"/>
                             <constraint firstAttribute="bottom" secondItem="dqu-j4-YFv" secondAttribute="bottom" id="JPN-oa-YV9"/>
                             <constraint firstItem="dqu-j4-YFv" firstAttribute="leading" secondItem="hd0-rz-0Cl" secondAttribute="leading" id="X1n-Lk-JFH"/>
                             <constraint firstAttribute="trailing" secondItem="dqu-j4-YFv" secondAttribute="trailing" id="r02-ZR-IRC"/>
