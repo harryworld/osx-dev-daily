@@ -9,7 +9,13 @@
 import Cocoa
 
 class ViewController: NSViewController {
+    
+    dynamic var users: [User] = []
+    @IBOutlet weak var tableView: NSTableView!
 
+    @IBOutlet weak var firstNameField: NSTextField!
+    @IBOutlet weak var lastNameField: NSTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,3 +31,12 @@ class ViewController: NSViewController {
 
 }
 
+extension ViewController: NSTableViewDelegate {
+    func tableViewSelectionDidChange(notification: NSNotification) {
+        print(tableView.selectedRow)
+        let user = users[tableView.selectedRow]
+        
+        firstNameField.stringValue = user.firstName
+        lastNameField.stringValue = user.lastName
+    }
+}
