@@ -11,6 +11,8 @@ import Cocoa
 class ViewController: NSViewController {
     
     dynamic var users: [User] = []
+    var currentUser: User?
+    
     @IBOutlet weak var tableView: NSTableView!
 
     @IBOutlet weak var firstNameField: NSTextField!
@@ -28,6 +30,10 @@ class ViewController: NSViewController {
         }
     }
 
+    @IBAction func updateUser(sender: NSButton) {
+        currentUser?.firstName = firstNameField.stringValue
+        currentUser?.lastName = lastNameField.stringValue
+    }
 
 }
 
@@ -35,6 +41,7 @@ extension ViewController: NSTableViewDelegate {
     func tableViewSelectionDidChange(notification: NSNotification) {
         print(tableView.selectedRow)
         let user = users[tableView.selectedRow]
+        currentUser = user
         
         firstNameField.stringValue = user.firstName
         lastNameField.stringValue = user.lastName
