@@ -31,8 +31,8 @@ class ViewController: NSViewController {
     }
 
     @IBAction func updateUser(sender: NSButton) {
-        currentUser?.firstName = firstNameField.stringValue
-        currentUser?.lastName = lastNameField.stringValue
+//        currentUser?.firstName = firstNameField.stringValue
+//        currentUser?.lastName = lastNameField.stringValue
     }
 
 }
@@ -46,4 +46,13 @@ extension ViewController: NSTableViewDelegate {
         firstNameField.stringValue = user.firstName
         lastNameField.stringValue = user.lastName
     }
+}
+
+extension ViewController: NSTextFieldDelegate {
+    
+    override func controlTextDidChange(obj: NSNotification) {
+        currentUser?.firstName = firstNameField.stringValue
+        currentUser?.lastName = lastNameField.stringValue
+    }
+    
 }
