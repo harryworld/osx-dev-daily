@@ -13,6 +13,8 @@
 		D14B44BF1C4293E800F02C8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D14B44BD1C4293E800F02C8E /* Main.storyboard */; };
 		D14B44CA1C4293E800F02C8E /* NSCollectionView2015Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14B44C91C4293E800F02C8E /* NSCollectionView2015Tests.swift */; };
 		D14B44D51C4293E800F02C8E /* NSCollectionView2015UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14B44D41C4293E800F02C8E /* NSCollectionView2015UITests.swift */; };
+		D14B44E81C42A18500F02C8E /* ImageCollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14B44E61C42A18500F02C8E /* ImageCollectionViewItem.swift */; };
+		D14B44E91C42A18500F02C8E /* ImageCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = D14B44E71C42A18500F02C8E /* ImageCollectionViewItem.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		D14B44D01C4293E800F02C8E /* NSCollectionView2015UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSCollectionView2015UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D14B44D41C4293E800F02C8E /* NSCollectionView2015UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCollectionView2015UITests.swift; sourceTree = "<group>"; };
 		D14B44D61C4293E800F02C8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D14B44E61C42A18500F02C8E /* ImageCollectionViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewItem.swift; sourceTree = "<group>"; };
+		D14B44E71C42A18500F02C8E /* ImageCollectionViewItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCollectionViewItem.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				D14B44BB1C4293E800F02C8E /* Assets.xcassets */,
 				D14B44BD1C4293E800F02C8E /* Main.storyboard */,
 				D14B44C01C4293E800F02C8E /* Info.plist */,
+				D14B44E61C42A18500F02C8E /* ImageCollectionViewItem.swift */,
+				D14B44E71C42A18500F02C8E /* ImageCollectionViewItem.xib */,
 			);
 			path = NSCollectionView2015;
 			sourceTree = "<group>";
@@ -226,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D14B44E91C42A18500F02C8E /* ImageCollectionViewItem.xib in Resources */,
 				D14B44BC1C4293E800F02C8E /* Assets.xcassets in Resources */,
 				D14B44BF1C4293E800F02C8E /* Main.storyboard in Resources */,
 			);
@@ -254,6 +261,7 @@
 			files = (
 				D14B44BA1C4293E800F02C8E /* ViewController.swift in Sources */,
 				D14B44B81C4293E800F02C8E /* AppDelegate.swift in Sources */,
+				D14B44E81C42A18500F02C8E /* ImageCollectionViewItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +483,7 @@
 				D14B44DB1C4293E800F02C8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D14B44DC1C4293E800F02C8E /* Build configuration list for PBXNativeTarget "NSCollectionView2015Tests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +492,7 @@
 				D14B44DE1C4293E800F02C8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D14B44DF1C4293E800F02C8E /* Build configuration list for PBXNativeTarget "NSCollectionView2015UITests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +501,7 @@
 				D14B44E11C4293E800F02C8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

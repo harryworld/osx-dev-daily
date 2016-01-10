@@ -25,3 +25,14 @@ class ViewController: NSViewController {
 
 }
 
+extension ViewController: NSCollectionViewDataSource {
+    
+    func collectionView(collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 20
+    }
+    
+    func collectionView(collectionView: NSCollectionView, itemForRepresentedObjectAtIndexPath indexPath: NSIndexPath) -> NSCollectionViewItem {
+        let item = collectionView.makeItemWithIdentifier("ImageCollectionViewItem", forIndexPath: indexPath)
+        return item
+    }
+}
