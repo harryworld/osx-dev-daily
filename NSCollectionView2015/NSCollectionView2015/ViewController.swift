@@ -10,10 +10,13 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    @IBOutlet weak var collectionView: NSCollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        collectionView.backgroundColors = [NSColor.grayColor()]
     }
 
     override var representedObject: AnyObject? {
@@ -34,5 +37,11 @@ extension ViewController: NSCollectionViewDataSource {
     func collectionView(collectionView: NSCollectionView, itemForRepresentedObjectAtIndexPath indexPath: NSIndexPath) -> NSCollectionViewItem {
         let item = collectionView.makeItemWithIdentifier("ImageCollectionViewItem", forIndexPath: indexPath)
         return item
+    }
+}
+
+extension ViewController: NSCollectionViewDelegate {
+    func collectionView(collectionView: NSCollectionView, didSelectItemsAtIndexPaths indexPaths: Set<NSIndexPath>) {
+        print(indexPaths)
     }
 }
