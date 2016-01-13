@@ -18,12 +18,12 @@ class ViewController: NSViewController {
         // Do any additional setup after loading the view.
         collectionView.backgroundColors = [NSColor.grayColor()]
         
-        let layout = NSCollectionViewGridLayout()
-        layout.maximumNumberOfColumns = 1
+//        let layout = NSCollectionViewGridLayout()
+//        layout.maximumNumberOfColumns = 1
 //        layout.maximumNumberOfRows = 5
-        layout.minimumItemSize = NSSize(width: 0, height: 50)
+//        layout.minimumItemSize = NSSize(width: 0, height: 50)
         
-        collectionView.collectionViewLayout = layout
+//        collectionView.collectionViewLayout = layout
     }
 
     override var representedObject: AnyObject? {
