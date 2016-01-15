@@ -5,14 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9531"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="Header" customModule="NSCollectionView2015" customModuleProvider="target">
-            <connections>
-                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
-            </connections>
-        </customObject>
+        <customObject id="-2" userLabel="File's Owner" customClass="Header" customModule="NSCollectionView2015" customModuleProvider="target"/>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customView id="Hz6-mo-xeY">
+        <customView id="Hz6-mo-xeY" customClass="HeaderView" customModule="NSCollectionView2015" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
@@ -30,10 +26,5 @@
                 <constraint firstItem="Idh-XP-wIU" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="pVR-6l-gPg"/>
             </constraints>
         </customView>
-        <customObject id="p5c-dq-C7J" customClass="Header" customModule="NSCollectionView2015" customModuleProvider="target">
-            <connections>
-                <outlet property="view" destination="Hz6-mo-xeY" id="caH-Dm-Lbz"/>
-            </connections>
-        </customObject>
     </objects>
 </document>

@@ -56,6 +56,12 @@ extension ViewController: NSCollectionViewDataSource {
         }
         
         let view = collectionView.makeSupplementaryViewOfKind(kind, withIdentifier: nibName!, forIndexPath: indexPath)
+        
+        if let view = view as? HeaderView {
+            view.titleTextField?.stringValue = "Custom Header"
+        } else if let view = view as? FooterView {
+            view.titleTextField?.stringValue = "Custom Footer"
+        }
         return view
     }
 }
@@ -68,9 +74,9 @@ extension ViewController: NSCollectionViewDelegate {
 
 extension ViewController: NSCollectionViewDelegateFlowLayout {
     
-//    func collectionView(collectionView: NSCollectionView, layout collectionViewLayout: NSCollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> NSSize {
-//        return NSSize(width: 0, height: 20)
-//    }
+    func collectionView(collectionView: NSCollectionView, layout collectionViewLayout: NSCollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> NSSize {
+        return NSSize(width: 0, height: 20)
+    }
     
     func collectionView(collectionView: NSCollectionView, layout collectionViewLayout: NSCollectionViewLayout, referenceSizeForFooterInSection section: Int) -> NSSize {
         return NSSize(width: 0, height: 20)
