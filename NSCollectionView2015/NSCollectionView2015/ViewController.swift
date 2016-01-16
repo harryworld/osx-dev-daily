@@ -9,6 +9,8 @@
 import Cocoa
 
 class ViewController: NSViewController {
+    
+    var strings = ["a", "b", "c", "d"]
 
     @IBOutlet weak var collectionView: NSCollectionView!
     
@@ -38,11 +40,14 @@ class ViewController: NSViewController {
 extension ViewController: NSCollectionViewDataSource {
     
     func collectionView(collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        return strings.count
     }
     
     func collectionView(collectionView: NSCollectionView, itemForRepresentedObjectAtIndexPath indexPath: NSIndexPath) -> NSCollectionViewItem {
         let item = collectionView.makeItemWithIdentifier("ImageCollectionViewItem", forIndexPath: indexPath)
+        
+        item.textField?.stringValue = "\(strings[indexPath.item]) \(indexPath.item)"
+        
         return item
     }
     
@@ -69,6 +74,13 @@ extension ViewController: NSCollectionViewDataSource {
 extension ViewController: NSCollectionViewDelegate {
     func collectionView(collectionView: NSCollectionView, didSelectItemsAtIndexPaths indexPaths: Set<NSIndexPath>) {
         print(indexPaths)
+        
+        collectionView.performBatchUpdates({ () -> Void in
+            let fromIndexPath = indexPaths.first!
+            let toIndexPath = NSIndexPath(forItem: self.strings.count - 1, inSection: 0)
+            
+            self.collectionView.moveItemAtIndexPath(fromIndexPath, toIndexPath: toIndexPath)
+            }, completionHandler: nil)
     }
 }
 

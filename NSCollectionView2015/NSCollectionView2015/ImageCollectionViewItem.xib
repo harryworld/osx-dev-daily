@@ -32,6 +32,7 @@
         </customView>
         <customObject id="K5W-sq-3Gd" customClass="ImageCollectionViewItem" customModule="NSCollectionView2015" customModuleProvider="target">
             <connections>
+                <outlet property="textField" destination="VAW-dO-hog" id="LxC-kt-khL"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="bdk-A4-IcO"/>
             </connections>
         </customObject>
