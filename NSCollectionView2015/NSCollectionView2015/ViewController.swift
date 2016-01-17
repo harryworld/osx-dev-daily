@@ -26,12 +26,26 @@ class ViewController: NSViewController {
 //        layout.minimumItemSize = NSSize(width: 0, height: 50)
         
 //        collectionView.collectionViewLayout = layout
+        collectionView.addGestureRecognizer(NSClickGestureRecognizer(target: self, action: "click:"))
     }
 
     override var representedObject: AnyObject? {
         didSet {
         // Update the view, if already loaded.
         }
+    }
+    
+    func click(gesture: NSGestureRecognizer) {
+        print("Click")
+        
+        collectionView.performBatchUpdates({ () -> Void in
+            self.strings.append("New")
+            
+            var set = Set<NSIndexPath>()
+            set.insert(NSIndexPath(forItem: self.strings.count - 1, inSection: 0))
+            
+            self.collectionView.insertItemsAtIndexPaths(set)
+            }, completionHandler: nil)
     }
 
 
