@@ -39,12 +39,14 @@ class ViewController: NSViewController {
         print("Click")
         
         collectionView.performBatchUpdates({ () -> Void in
-            self.strings.append("New")
+//            self.strings.append("New")
+            self.strings.removeLast()
             
             var set = Set<NSIndexPath>()
-            set.insert(NSIndexPath(forItem: self.strings.count - 1, inSection: 0))
+            set.insert(NSIndexPath(forItem: self.strings.count, inSection: 0))
             
-            self.collectionView.insertItemsAtIndexPaths(set)
+//            self.collectionView.insertItemsAtIndexPaths(set)
+            self.collectionView.deleteItemsAtIndexPaths(set)
             }, completionHandler: nil)
     }
 
