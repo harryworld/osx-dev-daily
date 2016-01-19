@@ -20,6 +20,7 @@
 		D14B45BB1C47E2E000F02C8E /* Footer.xib in Resources */ = {isa = PBXBuildFile; fileRef = D14B45B91C47E2E000F02C8E /* Footer.xib */; };
 		D1C422321C493A5700284429 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C422311C493A5700284429 /* HeaderView.swift */; };
 		D1C422341C493B7800284429 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C422331C493B7800284429 /* FooterView.swift */; };
+		D1C71B2C1C4E83D600E95644 /* CustomScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C71B2B1C4E83D600E95644 /* CustomScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		D14B45B91C47E2E000F02C8E /* Footer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Footer.xib; sourceTree = "<group>"; };
 		D1C422311C493A5700284429 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		D1C422331C493B7800284429 /* FooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
+		D1C71B2B1C4E83D600E95644 /* CustomScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				D1C422311C493A5700284429 /* HeaderView.swift */,
 				D14B45B91C47E2E000F02C8E /* Footer.xib */,
 				D1C422331C493B7800284429 /* FooterView.swift */,
+				D1C71B2B1C4E83D600E95644 /* CustomScrollView.swift */,
 			);
 			path = NSCollectionView2015;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			files = (
 				D14B44BA1C4293E800F02C8E /* ViewController.swift in Sources */,
 				D14B44B81C4293E800F02C8E /* AppDelegate.swift in Sources */,
+				D1C71B2C1C4E83D600E95644 /* CustomScrollView.swift in Sources */,
 				D14B457A1C46968C00F02C8E /* CollectionViewListLayout.swift in Sources */,
 				D1C422341C493B7800284429 /* FooterView.swift in Sources */,
 				D14B44E81C42A18500F02C8E /* ImageCollectionViewItem.swift in Sources */,
