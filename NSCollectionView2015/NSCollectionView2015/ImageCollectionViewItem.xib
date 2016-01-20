@@ -17,7 +17,10 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="VAW-dO-hog">
-                    <rect key="frame" x="132" y="42" width="37" height="17"/>
+                    <rect key="frame" x="48" y="42" width="254" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="iqP-k6-haO"/>
+                    </constraints>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="Vp5-fs-FAB">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -26,8 +29,8 @@
                 </textField>
             </subviews>
             <constraints>
-                <constraint firstItem="VAW-dO-hog" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="TEe-Uv-Kpg"/>
-                <constraint firstItem="VAW-dO-hog" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="o32-Uo-GAE"/>
+                <constraint firstItem="VAW-dO-hog" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="bam-lL-Ymo"/>
+                <constraint firstItem="VAW-dO-hog" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="50" id="i0W-ic-ost"/>
             </constraints>
         </customView>
         <customObject id="K5W-sq-3Gd" customClass="ImageCollectionViewItem" customModule="NSCollectionView2015" customModuleProvider="target">

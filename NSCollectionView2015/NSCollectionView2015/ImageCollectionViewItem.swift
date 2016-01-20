@@ -23,6 +23,23 @@ class ImageCollectionViewItem: NSCollectionViewItem {
         
         view.wantsLayer = true
         view.layer?.backgroundColor = NSColor.redColor().CGColor
+        
+        textField?.delegate = self
+        
+        let click = NSClickGestureRecognizer(target: self, action: "click:")
+        view.addGestureRecognizer(click)
+    }
+    
+    func click(gesture: NSClickGestureRecognizer) {
+        let location = gesture.locationInView(view)
+        
+        if location.x > 50 {
+            if let textField = textField {
+                textField.editable = true
+                textField.focusRingType = .None
+                textField.becomeFirstResponder()
+            }
+        }
     }
     
     func updateColor() {
@@ -36,6 +53,17 @@ class ImageCollectionViewItem: NSCollectionViewItem {
             }
         } else {
             view.layer?.backgroundColor = NSColor.redColor().CGColor
+        }
+    }
+    
+}
+
+extension ImageCollectionViewItem: NSTextFieldDelegate {
+    
+    override func controlTextDidEndEditing(obj: NSNotification) {
+        if let textField = textField {
+            textField.editable = false
+            textField.resignFirstResponder()
         }
     }
     

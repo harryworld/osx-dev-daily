@@ -102,6 +102,10 @@ extension ViewController: NSCollectionViewDelegate {
 
 extension ViewController: NSCollectionViewDelegateFlowLayout {
     
+    func collectionView(collectionView: NSCollectionView, layout collectionViewLayout: NSCollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> NSSize {
+        return NSSize(width: collectionView.bounds.width, height: 50)
+    }
+    
     func collectionView(collectionView: NSCollectionView, layout collectionViewLayout: NSCollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> NSSize {
         return NSSize(width: 0, height: 20)
     }
