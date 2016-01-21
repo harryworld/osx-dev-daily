@@ -9,6 +9,11 @@
 import Cocoa
 
 class CustomScrollView: NSScrollView {
+    
+    override func awakeFromNib() {
+        let area = NSTrackingArea(rect: bounds, options: [.InVisibleRect, .ActiveAlways, .MouseMoved], owner: self, userInfo: nil)
+        addTrackingArea(area)
+    }
 
     override func scrollWheel(theEvent: NSEvent) {
         switch theEvent.phase {
@@ -30,6 +35,24 @@ class CustomScrollView: NSScrollView {
         }
         
         super.scrollWheel(theEvent)
+    }
+    
+    override func mouseMoved(theEvent: NSEvent) {
+        var pointInView = convertPoint(theEvent.locationInWindow, fromView: nil)
+        pointInView.y += documentVisibleRect.origin.y
+        
+        if let collectionView = documentView as? NSCollectionView {
+            
+            for item in collectionView.visibleItems() {
+                (item as? ImageCollectionViewItem)?.setBackground(false)
+            }
+            
+            if let indexPath = collectionView.indexPathForItemAtPoint(pointInView) {
+                if let item = collectionView.itemAtIndexPath(indexPath) as? ImageCollectionViewItem {
+                    item.setBackground(true)
+                }
+            }
+        }
     }
     
 }

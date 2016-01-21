@@ -21,8 +21,8 @@ class ImageCollectionViewItem: NSCollectionViewItem {
         super.viewDidLoad()
         // Do view setup here.
         
-        view.wantsLayer = true
-        view.layer?.backgroundColor = NSColor.redColor().CGColor
+//        view.wantsLayer = true
+//        view.layer?.backgroundColor = NSColor.redColor().CGColor
         
         textField?.delegate = self
         
@@ -54,6 +54,10 @@ class ImageCollectionViewItem: NSCollectionViewItem {
         } else {
             view.layer?.backgroundColor = NSColor.redColor().CGColor
         }
+    }
+    
+    func setBackground(highlight: Bool) {
+        (view as? ImageCollectionView)?.mouseInside = highlight
     }
     
 }

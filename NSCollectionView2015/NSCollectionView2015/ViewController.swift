@@ -10,7 +10,7 @@ import Cocoa
 
 class ViewController: NSViewController {
     
-    var strings = ["a", "b", "c", "d"]
+    var strings = ["a", "b", "c", "d", "e", "f", "g", "h"]
 
     @IBOutlet weak var collectionView: NSCollectionView!
     
