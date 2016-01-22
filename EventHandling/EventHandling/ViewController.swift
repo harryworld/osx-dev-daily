@@ -17,6 +17,22 @@ class ViewController: NSViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewDidAppear() {
+        view.window?.makeFirstResponder(self)
+    }
+    
+    override func keyDown(theEvent: NSEvent) {
+        statusLabel.stringValue = "No Specific Event"
+        
+        if (theEvent.modifierFlags.rawValue & NSEventModifierFlags.DeviceIndependentModifierFlagsMask.rawValue) == NSEventModifierFlags.ShiftKeyMask.rawValue {
+            if theEvent.keyCode == 49 {
+                statusLabel.stringValue = "keyDown: Shift + Space"
+            }
+        } else if theEvent.keyCode == 49 {
+            statusLabel.stringValue = "keyDown: Space"
+        }
+    }
 
 }
 
