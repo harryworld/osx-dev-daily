@@ -33,6 +33,26 @@ class ViewController: NSViewController {
             statusLabel.stringValue = "keyDown: Space"
         }
     }
+    
+    override func mouseDown(theEvent: NSEvent) {
+        print("mouseDown")
+        statusLabel.stringValue = "mouseDown \(theEvent.locationInWindow)"
+    }
+    
+    override func mouseUp(theEvent: NSEvent) {
+        print("mouseUp")
+        statusLabel.stringValue = "mouseUp \(theEvent.locationInWindow)"
+    }
+    
+    override func mouseDragged(theEvent: NSEvent) {
+        print("mouseDragged")
+        statusLabel.stringValue = "mouseDragged \(theEvent.locationInWindow)"
+    }
+    
+    override func rightMouseDown(theEvent: NSEvent) {
+        print("right")
+        statusLabel.stringValue = "right mouseDown"
+    }
 
 }
 
