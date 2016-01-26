@@ -13,6 +13,7 @@
 		D1A97AE31C5642E30085DDF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1A97AE11C5642E30085DDF1 /* Main.storyboard */; };
 		D1A97AEE1C5642E30085DDF1 /* NSViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A97AED1C5642E30085DDF1 /* NSViewTests.swift */; };
 		D1A97AF91C5642E30085DDF1 /* NSViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A97AF81C5642E30085DDF1 /* NSViewUITests.swift */; };
+		D1A97B091C56584C0085DDF1 /* RoundedSquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A97B081C56584C0085DDF1 /* RoundedSquareView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		D1A97AF41C5642E30085DDF1 /* NSViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1A97AF81C5642E30085DDF1 /* NSViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSViewUITests.swift; sourceTree = "<group>"; };
 		D1A97AFA1C5642E30085DDF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1A97B081C56584C0085DDF1 /* RoundedSquareView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedSquareView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				D1A97ADF1C5642E30085DDF1 /* Assets.xcassets */,
 				D1A97AE11C5642E30085DDF1 /* Main.storyboard */,
 				D1A97AE41C5642E30085DDF1 /* Info.plist */,
+				D1A97B081C56584C0085DDF1 /* RoundedSquareView.swift */,
 			);
 			path = NSView;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1A97ADE1C5642E30085DDF1 /* ViewController.swift in Sources */,
+				D1A97B091C56584C0085DDF1 /* RoundedSquareView.swift in Sources */,
 				D1A97ADC1C5642E30085DDF1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -475,6 +479,7 @@
 				D1A97AFF1C5642E30085DDF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D1A97B001C5642E30085DDF1 /* Build configuration list for PBXNativeTarget "NSViewTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +488,7 @@
 				D1A97B021C5642E30085DDF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D1A97B031C5642E30085DDF1 /* Build configuration list for PBXNativeTarget "NSViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +497,7 @@
 				D1A97B051C5642E30085DDF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
