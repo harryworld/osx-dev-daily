@@ -28,6 +28,11 @@ class ViewController: NSViewController, NSGestureRecognizerDelegate {
         doubleClick.numberOfClicksRequired = 2
         view.addGestureRecognizer(doubleClick)
         self.doubleClick = doubleClick
+        
+        let shiftClick = ShiftClickGestureRecognizer(target: self, action: "shiftClick:")
+//        shiftClick.target = self
+//        shiftClick.action = "shiftClick:"
+        view.addGestureRecognizer(shiftClick)
     }
     
     override func viewDidAppear() {
@@ -44,6 +49,11 @@ class ViewController: NSViewController, NSGestureRecognizerDelegate {
     func doubleClick(gesture: NSClickGestureRecognizer) {
         print("doubleClick")
         statusLabel.stringValue = "doubleClick"
+    }
+    
+    func shiftClick(click: ShiftClickGestureRecognizer) {
+        print("shiftClick")
+        statusLabel.stringValue = "shiftClick"
     }
     
     func gestureRecognizer(gestureRecognizer: NSGestureRecognizer, shouldRequireFailureOfGestureRecognizer otherGestureRecognizer: NSGestureRecognizer) -> Bool {
