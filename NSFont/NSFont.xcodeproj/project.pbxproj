@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D10C11AD1C5A2D91009A6CAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10C11AC1C5A2D91009A6CAD /* AppDelegate.swift */; };
+		D10C11AF1C5A2D91009A6CAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10C11AE1C5A2D91009A6CAD /* ViewController.swift */; };
+		D10C11B11C5A2D91009A6CAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D10C11B01C5A2D91009A6CAD /* Assets.xcassets */; };
+		D10C11B41C5A2D91009A6CAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D10C11B21C5A2D91009A6CAD /* Main.storyboard */; };
+		D10C11BF1C5A2D91009A6CAD /* NSFontTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10C11BE1C5A2D91009A6CAD /* NSFontTests.swift */; };
+		D10C11CA1C5A2D91009A6CAD /* NSFontUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10C11C91C5A2D91009A6CAD /* NSFontUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D10C11BB1C5A2D91009A6CAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D10C11A11C5A2D91009A6CAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D10C11A81C5A2D91009A6CAD;
+			remoteInfo = NSFont;
+		};
+		D10C11C61C5A2D91009A6CAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D10C11A11C5A2D91009A6CAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D10C11A81C5A2D91009A6CAD;
+			remoteInfo = NSFont;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D10C11A91C5A2D91009A6CAD /* NSFont.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSFont.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D10C11AC1C5A2D91009A6CAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D10C11AE1C5A2D91009A6CAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D10C11B01C5A2D91009A6CAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D10C11B31C5A2D91009A6CAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D10C11B51C5A2D91009A6CAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D10C11BA1C5A2D91009A6CAD /* NSFontTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSFontTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D10C11BE1C5A2D91009A6CAD /* NSFontTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSFontTests.swift; sourceTree = "<group>"; };
+		D10C11C01C5A2D91009A6CAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D10C11C51C5A2D91009A6CAD /* NSFontUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSFontUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D10C11C91C5A2D91009A6CAD /* NSFontUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSFontUITests.swift; sourceTree = "<group>"; };
+		D10C11CB1C5A2D91009A6CAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D10C11A61C5A2D91009A6CAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D10C11B71C5A2D91009A6CAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D10C11C21C5A2D91009A6CAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D10C11A01C5A2D91009A6CAD = {
+			isa = PBXGroup;
+			children = (
+				D10C11AB1C5A2D91009A6CAD /* NSFont */,
+				D10C11BD1C5A2D91009A6CAD /* NSFontTests */,
+				D10C11C81C5A2D91009A6CAD /* NSFontUITests */,
+				D10C11AA1C5A2D91009A6CAD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D10C11AA1C5A2D91009A6CAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D10C11A91C5A2D91009A6CAD /* NSFont.app */,
+				D10C11BA1C5A2D91009A6CAD /* NSFontTests.xctest */,
+				D10C11C51C5A2D91009A6CAD /* NSFontUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D10C11AB1C5A2D91009A6CAD /* NSFont */ = {
+			isa = PBXGroup;
+			children = (
+				D10C11AC1C5A2D91009A6CAD /* AppDelegate.swift */,
+				D10C11AE1C5A2D91009A6CAD /* ViewController.swift */,
+				D10C11B01C5A2D91009A6CAD /* Assets.xcassets */,
+				D10C11B21C5A2D91009A6CAD /* Main.storyboard */,
+				D10C11B51C5A2D91009A6CAD /* Info.plist */,
+			);
+			path = NSFont;
+			sourceTree = "<group>";
+		};
+		D10C11BD1C5A2D91009A6CAD /* NSFontTests */ = {
+			isa = PBXGroup;
+			children = (
+				D10C11BE1C5A2D91009A6CAD /* NSFontTests.swift */,
+				D10C11C01C5A2D91009A6CAD /* Info.plist */,
+			);
+			path = NSFontTests;
+			sourceTree = "<group>";
+		};
+		D10C11C81C5A2D91009A6CAD /* NSFontUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D10C11C91C5A2D91009A6CAD /* NSFontUITests.swift */,
+				D10C11CB1C5A2D91009A6CAD /* Info.plist */,
+			);
+			path = NSFontUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D10C11A81C5A2D91009A6CAD /* NSFont */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D10C11CE1C5A2D91009A6CAD /* Build configuration list for PBXNativeTarget "NSFont" */;
+			buildPhases = (
+				D10C11A51C5A2D91009A6CAD /* Sources */,
+				D10C11A61C5A2D91009A6CAD /* Frameworks */,
+				D10C11A71C5A2D91009A6CAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NSFont;
+			productName = NSFont;
+			productReference = D10C11A91C5A2D91009A6CAD /* NSFont.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D10C11B91C5A2D91009A6CAD /* NSFontTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D10C11D11C5A2D91009A6CAD /* Build configuration list for PBXNativeTarget "NSFontTests" */;
+			buildPhases = (
+				D10C11B61C5A2D91009A6CAD /* Sources */,
+				D10C11B71C5A2D91009A6CAD /* Frameworks */,
+				D10C11B81C5A2D91009A6CAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D10C11BC1C5A2D91009A6CAD /* PBXTargetDependency */,
+			);
+			name = NSFontTests;
+			productName = NSFontTests;
+			productReference = D10C11BA1C5A2D91009A6CAD /* NSFontTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D10C11C41C5A2D91009A6CAD /* NSFontUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D10C11D41C5A2D91009A6CAD /* Build configuration list for PBXNativeTarget "NSFontUITests" */;
+			buildPhases = (
+				D10C11C11C5A2D91009A6CAD /* Sources */,
+				D10C11C21C5A2D91009A6CAD /* Frameworks */,
+				D10C11C31C5A2D91009A6CAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D10C11C71C5A2D91009A6CAD /* PBXTargetDependency */,
+			);
+			name = NSFontUITests;
+			productName = NSFontUITests;
+			productReference = D10C11C51C5A2D91009A6CAD /* NSFontUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D10C11A11C5A2D91009A6CAD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "STAY REAL";
+				TargetAttributes = {
+					D10C11A81C5A2D91009A6CAD = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					D10C11B91C5A2D91009A6CAD = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = D10C11A81C5A2D91009A6CAD;
+					};
+					D10C11C41C5A2D91009A6CAD = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = D10C11A81C5A2D91009A6CAD;
+					};
+				};
+			};
+			buildConfigurationList = D10C11A41C5A2D91009A6CAD /* Build configuration list for PBXProject "NSFont" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D10C11A01C5A2D91009A6CAD;
+			productRefGroup = D10C11AA1C5A2D91009A6CAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D10C11A81C5A2D91009A6CAD /* NSFont */,
+				D10C11B91C5A2D91009A6CAD /* NSFontTests */,
+				D10C11C41C5A2D91009A6CAD /* NSFontUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D10C11A71C5A2D91009A6CAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D10C11B11C5A2D91009A6CAD /* Assets.xcassets in Resources */,
+				D10C11B41C5A2D91009A6CAD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D10C11B81C5A2D91009A6CAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D10C11C31C5A2D91009A6CAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D10C11A51C5A2D91009A6CAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D10C11AF1C5A2D91009A6CAD /* ViewController.swift in Sources */,
+				D10C11AD1C5A2D91009A6CAD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D10C11B61C5A2D91009A6CAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D10C11BF1C5A2D91009A6CAD /* NSFontTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D10C11C11C5A2D91009A6CAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D10C11CA1C5A2D91009A6CAD /* NSFontUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D10C11BC1C5A2D91009A6CAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D10C11A81C5A2D91009A6CAD /* NSFont */;
+			targetProxy = D10C11BB1C5A2D91009A6CAD /* PBXContainerItemProxy */;
+		};
+		D10C11C71C5A2D91009A6CAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D10C11A81C5A2D91009A6CAD /* NSFont */;
+			targetProxy = D10C11C61C5A2D91009A6CAD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D10C11B21C5A2D91009A6CAD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D10C11B31C5A2D91009A6CAD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D10C11CC1C5A2D91009A6CAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D10C11CD1C5A2D91009A6CAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D10C11CF1C5A2D91009A6CAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = NSFont/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stayrealhk.NSFont;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D10C11D01C5A2D91009A6CAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = NSFont/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stayrealhk.NSFont;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D10C11D21C5A2D91009A6CAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = NSFontTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stayrealhk.NSFontTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NSFont.app/Contents/MacOS/NSFont";
+			};
+			name = Debug;
+		};
+		D10C11D31C5A2D91009A6CAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = NSFontTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stayrealhk.NSFontTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NSFont.app/Contents/MacOS/NSFont";
+			};
+			name = Release;
+		};
+		D10C11D51C5A2D91009A6CAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = NSFontUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stayrealhk.NSFontUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = NSFont;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		D10C11D61C5A2D91009A6CAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = NSFontUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stayrealhk.NSFontUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = NSFont;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D10C11A41C5A2D91009A6CAD /* Build configuration list for PBXProject "NSFont" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D10C11CC1C5A2D91009A6CAD /* Debug */,
+				D10C11CD1C5A2D91009A6CAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D10C11CE1C5A2D91009A6CAD /* Build configuration list for PBXNativeTarget "NSFont" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D10C11CF1C5A2D91009A6CAD /* Debug */,
+				D10C11D01C5A2D91009A6CAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D10C11D11C5A2D91009A6CAD /* Build configuration list for PBXNativeTarget "NSFontTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D10C11D21C5A2D91009A6CAD /* Debug */,
+				D10C11D31C5A2D91009A6CAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D10C11D41C5A2D91009A6CAD /* Build configuration list for PBXNativeTarget "NSFontUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D10C11D51C5A2D91009A6CAD /* Debug */,
+				D10C11D61C5A2D91009A6CAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D10C11A11C5A2D91009A6CAD /* Project object */;
+}
