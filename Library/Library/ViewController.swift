@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import Alamofire
 
 class ViewController: NSViewController {
 
@@ -14,6 +15,7 @@ class ViewController: NSViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        Alamofire.request(.GET, "https://httpbin.org/get")
     }
 
     override var representedObject: AnyObject? {
