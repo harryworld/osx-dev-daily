@@ -11,3 +11,4 @@ OSX Development Video Tutorials Every Day
   - [Day 54 Start Coding](https://github.com/harryworld/CocoaSwiftPlayer/archive/04_start_coding.zip)
   - [Day 55 Import Songs](https://github.com/harryworld/CocoaSwiftPlayer/archive/05_import_songs.zip)
   - [Day 56 Display Songs](https://github.com/harryworld/CocoaSwiftPlayer/archive/06_display_songs.zip)
+  - [Day 57 Play Song](https://github.com/harryworld/CocoaSwiftPlayer/archive/07_play_song.zip)
