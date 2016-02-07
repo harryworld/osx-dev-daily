@@ -12,3 +12,4 @@ OSX Development Video Tutorials Every Day
   - [Day 55 Import Songs](https://github.com/harryworld/CocoaSwiftPlayer/archive/05_import_songs.zip)
   - [Day 56 Display Songs](https://github.com/harryworld/CocoaSwiftPlayer/archive/06_display_songs.zip)
   - [Day 57 Play Song](https://github.com/harryworld/CocoaSwiftPlayer/archive/07_play_song.zip)
+  - [Day 58 Next Rewind](https://github.com/harryworld/CocoaSwiftPlayer/archive/08_next_rewind.zip)
