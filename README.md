@@ -16,3 +16,4 @@ OSX Development Video Tutorials Every Day
   - [Day 59 Repeat Play](https://github.com/harryworld/CocoaSwiftPlayer/archive/09_repeat_play.zip)
   - [Day 60 Shuffle Play](https://github.com/harryworld/CocoaSwiftPlayer/archive/10_shuffle_play.zip)
   - [Day 61 Show Song Progress](https://github.com/harryworld/CocoaSwiftPlayer/archive/11_show_song_progress.zip)
+  - [Day 62 Show Song Title](https://github.com/harryworld/CocoaSwiftPlayer/archive/12_show_song_title.zip)
