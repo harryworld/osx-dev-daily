@@ -18,3 +18,4 @@ OSX Development Video Tutorials Every Day
   - [Day 61 Show Song Progress](https://github.com/harryworld/CocoaSwiftPlayer/archive/11_show_song_progress.zip)
   - [Day 62 Show Song Title](https://github.com/harryworld/CocoaSwiftPlayer/archive/12_show_song_title.zip)
   - [Day 63 Playlist](https://github.com/harryworld/CocoaSwiftPlayer/archive/13_playlist.zip)
+  - [Day 64 Playlist in Realm](https://github.com/harryworld/CocoaSwiftPlayer/archive/14_playlist_in_realm.zip)
