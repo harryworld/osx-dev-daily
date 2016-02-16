@@ -21,3 +21,4 @@ OSX Development Video Tutorials Every Day
   - [Day 64 Playlist in Realm](https://github.com/harryworld/CocoaSwiftPlayer/archive/14_playlist_in_realm.zip)
   - [Day 65 Add to Playlist](https://github.com/harryworld/CocoaSwiftPlayer/archive/15_add_to_playlist.zip)
   - [Day 66 Switch & Rename Playlist](https://github.com/harryworld/CocoaSwiftPlayer/archive/16_switch_rename_playlist.zip)
+  - [Day 67 Delete using Menu](https://github.com/harryworld/CocoaSwiftPlayer/archive/17_delete_using_menu.zip)
