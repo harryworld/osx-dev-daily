@@ -22,3 +22,4 @@ OSX Development Video Tutorials Every Day
   - [Day 65 Add to Playlist](https://github.com/harryworld/CocoaSwiftPlayer/archive/15_add_to_playlist.zip)
   - [Day 66 Switch & Rename Playlist](https://github.com/harryworld/CocoaSwiftPlayer/archive/16_switch_rename_playlist.zip)
   - [Day 67 Delete using Menu](https://github.com/harryworld/CocoaSwiftPlayer/archive/17_delete_using_menu.zip)
+  - [Day 68 Status Bar App](https://github.com/harryworld/CocoaSwiftPlayer/archive/18_status_bar_app.zip)
