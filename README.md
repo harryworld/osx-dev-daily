@@ -25,3 +25,4 @@ OSX Development Video Tutorials Every Day
   - [Day 68 Status Bar App](https://github.com/harryworld/CocoaSwiftPlayer/archive/18_status_bar_app.zip)
   - [Day 69 Visual Effects](https://github.com/harryworld/CocoaSwiftPlayer/archive/19_visual_effects.zip)
   - [Day 70 Wrapping Up](https://github.com/harryworld/CocoaSwiftPlayer/archive/20_wrapping_up.zip)
+  - [Day 71 Bonus](https://github.com/harryworld/CocoaSwiftPlayer/archive/21_bonus.zip)
