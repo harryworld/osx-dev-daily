@@ -757,6 +757,56 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D9O-NS-zFK">
+                                <rect key="frame" x="219" y="222" width="107" height="32"/>
+                                <buttonCell key="cell" type="push" title="Add to Top" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Djb-bN-RMg">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="addToTop:" target="XfG-lQ-9wD" id="QSf-ME-wwv"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CRc-Eh-Pua">
+                                <rect key="frame" x="219" y="189" width="149" height="32"/>
+                                <buttonCell key="cell" type="push" title="Remove First Item" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gEq-0r-UHQ">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="removeFirst:" target="XfG-lQ-9wD" id="9uU-gV-62d"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BJO-01-SR4">
+                                <rect key="frame" x="219" y="125" width="131" height="32"/>
+                                <buttonCell key="cell" type="push" title="Add To Bottom" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="k2h-7t-nbX">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="addToBottom:" target="XfG-lQ-9wD" id="Xpu-Px-6fz"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wdG-wj-9BM">
+                                <rect key="frame" x="219" y="92" width="148" height="32"/>
+                                <buttonCell key="cell" type="push" title="Remove Last Item" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="CNB-4I-7rl">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="removeLast:" target="XfG-lQ-9wD" id="wXA-Qc-Cvo"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JI3-Se-a4H">
+                                <rect key="frame" x="219" y="38" width="148" height="32"/>
+                                <buttonCell key="cell" type="push" title="Move First to Last" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Haa-6w-9x4">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="moveFirstToLast:" target="XfG-lQ-9wD" id="afP-LU-uQu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="O22-Wy-0wq" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="Q2Y-vI-bXB"/>
@@ -765,7 +815,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="outlineView" destination="4b6-uv-Mnq" id="MBN-Ku-B14"/>
+                        <outlet property="outlineView" destination="4b6-uv-Mnq" id="PV3-PA-ZzU"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

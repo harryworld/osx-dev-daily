@@ -21,7 +21,9 @@ class ViewController: NSViewController {
         
         outlineView.setDelegate(self)
         outlineView.setDataSource(self)
-        
+    }
+    
+    override func viewDidAppear() {
         outlineView.expandItem(nil, expandChildren: true)
     }
     
@@ -32,6 +34,43 @@ class ViewController: NSViewController {
 }
 
 extension ViewController {
+    
+    @IBAction func addToTop(sender: AnyObject) {
+        strings.insert("C", atIndex: 0)
+        if let rootItem = outlineView.itemAtRow(0) {
+            outlineView.insertItemsAtIndexes(NSIndexSet(index: 0), inParent: rootItem, withAnimation: [.SlideRight])
+        }
+    }
+    
+    @IBAction func removeFirst(sender: AnyObject) {
+        strings.removeFirst()
+        if let rootItem = outlineView.itemAtRow(0) {
+            outlineView.removeItemsAtIndexes(NSIndexSet(index: 0), inParent: rootItem, withAnimation: [.SlideLeft])
+        }
+    }
+    
+    @IBAction func addToBottom(sender: AnyObject) {
+        strings.append("D")
+        if let rootItem = outlineView.itemAtRow(0) {
+            outlineView.insertItemsAtIndexes(NSIndexSet(index: strings.count - 1), inParent: rootItem, withAnimation: [.SlideRight])
+        }
+    }
+    
+    @IBAction func removeLast(sender: AnyObject) {
+        strings.removeLast()
+        if let rootItem = outlineView.itemAtRow(0) {
+            outlineView.removeItemsAtIndexes(NSIndexSet(index: strings.count), inParent: rootItem, withAnimation: [.SlideLeft])
+        }
+    }
+    
+    @IBAction func moveFirstToLast(sender: AnyObject) {
+        let temp = strings[0]
+        strings.removeFirst()
+        strings.append(temp)
+        if let rootItem = outlineView.itemAtRow(0) {
+            outlineView.moveItemAtIndex(0, inParent: rootItem, toIndex: strings.count - 1, inParent: rootItem)
+        }
+    }
     
 }
 
