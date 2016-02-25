@@ -11,7 +11,7 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-
+    var windowController: PreferenceWindowController?
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
@@ -21,6 +21,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Insert code here to tear down your application
     }
 
+    @IBAction func showPreference(sender: AnyObject) {
+        if windowController == nil {
+            windowController = PreferenceWindowController.loadFromNib()
+        }
+        windowController?.showWindow(self)
+    }
 
 }
 

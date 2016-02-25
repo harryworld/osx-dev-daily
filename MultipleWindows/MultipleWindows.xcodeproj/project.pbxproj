@@ -13,6 +13,8 @@
 		D113E6AB1C7F52F000D00ECB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D113E6A91C7F52F000D00ECB /* Main.storyboard */; };
 		D113E6B61C7F52F000D00ECB /* MultipleWindowsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D113E6B51C7F52F000D00ECB /* MultipleWindowsTests.swift */; };
 		D113E6C11C7F52F000D00ECB /* MultipleWindowsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D113E6C01C7F52F000D00ECB /* MultipleWindowsUITests.swift */; };
+		D113E6D11C7F539200D00ECB /* Preferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D113E6CF1C7F539200D00ECB /* Preferences.storyboard */; };
+		D113E6D31C7F53DE00D00ECB /* PreferenceWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D113E6D21C7F53DE00D00ECB /* PreferenceWindowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		D113E6BC1C7F52F000D00ECB /* MultipleWindowsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultipleWindowsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D113E6C01C7F52F000D00ECB /* MultipleWindowsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleWindowsUITests.swift; sourceTree = "<group>"; };
 		D113E6C21C7F52F000D00ECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D113E6D01C7F539200D00ECB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Preferences.storyboard; sourceTree = "<group>"; };
+		D113E6D21C7F53DE00D00ECB /* PreferenceWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferenceWindowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,7 @@
 		D113E6A21C7F52EF00D00ECB /* MultipleWindows */ = {
 			isa = PBXGroup;
 			children = (
+				D113E6CE1C7F537300D00ECB /* Preferences */,
 				D113E6A31C7F52EF00D00ECB /* AppDelegate.swift */,
 				D113E6A51C7F52F000D00ECB /* ViewController.swift */,
 				D113E6A71C7F52F000D00ECB /* Assets.xcassets */,
@@ -120,6 +125,15 @@
 				D113E6C21C7F52F000D00ECB /* Info.plist */,
 			);
 			path = MultipleWindowsUITests;
+			sourceTree = "<group>";
+		};
+		D113E6CE1C7F537300D00ECB /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				D113E6CF1C7F539200D00ECB /* Preferences.storyboard */,
+				D113E6D21C7F53DE00D00ECB /* PreferenceWindowController.swift */,
+			);
+			name = Preferences;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D113E6D11C7F539200D00ECB /* Preferences.storyboard in Resources */,
 				D113E6A81C7F52F000D00ECB /* Assets.xcassets in Resources */,
 				D113E6AB1C7F52F000D00ECB /* Main.storyboard in Resources */,
 			);
@@ -252,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D113E6D31C7F53DE00D00ECB /* PreferenceWindowController.swift in Sources */,
 				D113E6A61C7F52F000D00ECB /* ViewController.swift in Sources */,
 				D113E6A41C7F52EF00D00ECB /* AppDelegate.swift in Sources */,
 			);
@@ -295,6 +311,14 @@
 				D113E6AA1C7F52F000D00ECB /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D113E6CF1C7F539200D00ECB /* Preferences.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D113E6D01C7F539200D00ECB /* Base */,
+			);
+			name = Preferences.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
