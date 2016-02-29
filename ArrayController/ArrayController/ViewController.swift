@@ -10,10 +10,13 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    @IBOutlet weak var tableView: NSTableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        tableView.sortDescriptors = [NSSortDescriptor(key: "name", ascending: true, selector: "caseInsensitiveCompare:"), NSSortDescriptor(key: "bpm", ascending: true)]
     }
 
     override var representedObject: AnyObject? {
