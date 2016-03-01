@@ -11,6 +11,11 @@ import Cocoa
 class ViewController: NSViewController {
 
     @IBOutlet weak var tableView: NSTableView!
+    @IBOutlet var arrayController: NSArrayController!
+    
+    lazy var predicate: NSPredicate = {
+        return NSPredicate(format: "(name contains[cd] $value) OR (bpm == $value.intValue)")
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +30,16 @@ class ViewController: NSViewController {
         }
     }
 
+    @IBAction func changeSearchQuery(sender: NSSearchField) {
+        if sender.stringValue.isEmpty {
+            arrayController.filterPredicate = nil
+        } else {
+            //arrayController.filterPredicate = NSPredicate(format: "(name contains[cd] %@) OR (bpm == %@.intValue)", sender.stringValue, sender.stringValue)
+            
+            let dict = ["value": sender.stringValue]
+            arrayController.filterPredicate = predicate.predicateWithSubstitutionVariables(dict)
+        }
+    }
 
 }
 
