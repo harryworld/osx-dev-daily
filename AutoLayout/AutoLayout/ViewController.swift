@@ -10,10 +10,30 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    @IBOutlet weak var rightView: NSView!
+    @IBOutlet weak var leftView: NSView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        rightView.wantsLayer = true
+        rightView.layer?.backgroundColor = NSColor.greenColor().CGColor
+        
+        leftView.wantsLayer = true
+        leftView.layer?.backgroundColor = NSColor.redColor().CGColor
+        
+        //let bottomLeftConstraint = NSLayoutConstraint(item: leftView, attribute: .Bottom, relatedBy: .Equal, toItem: view, attribute: .Bottom, multiplier: 1.0, constant: 0)
+        //view.addConstraint(bottomLeftConstraint)
+        
+        let centerView = NSView(frame: NSRect(x: 100, y: 0, width: 65, height: 100))
+        centerView.wantsLayer = true
+        centerView.layer?.backgroundColor = NSColor.blueColor().CGColor
+        view.addSubview(centerView)
+        
+        //let topCenterConstraint = NSLayoutConstraint(item: centerView, attribute: .Top, relatedBy: .Equal, toItem: view, attribute: .Top, multiplier: 1.0, constant: 0)
+        //view.addConstraint(topCenterConstraint)
+        
     }
 
     override var representedObject: AnyObject? {
