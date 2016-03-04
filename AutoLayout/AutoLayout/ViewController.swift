@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import SnapKit
 
 class ViewController: NSViewController {
 
@@ -23,6 +24,12 @@ class ViewController: NSViewController {
         leftView.wantsLayer = true
         leftView.layer?.backgroundColor = NSColor.redColor().CGColor
         
+        //leftView.snp_makeConstraints { make in
+            //make.top.equalTo(view)
+            //make.left.equalTo(view)
+            //make.bottom.equalTo(view)
+        //}
+        
         //let bottomLeftConstraint = NSLayoutConstraint(item: leftView, attribute: .Bottom, relatedBy: .Equal, toItem: view, attribute: .Bottom, multiplier: 1.0, constant: 0)
         //view.addConstraint(bottomLeftConstraint)
         
@@ -30,6 +37,13 @@ class ViewController: NSViewController {
         centerView.wantsLayer = true
         centerView.layer?.backgroundColor = NSColor.blueColor().CGColor
         view.addSubview(centerView)
+        
+        centerView.snp_makeConstraints { make in
+            make.top.equalTo(view)
+            make.bottom.equalTo(view)
+            make.width.equalTo(60)
+            make.centerX.equalTo(view)
+        }
         
         //let topCenterConstraint = NSLayoutConstraint(item: centerView, attribute: .Top, relatedBy: .Equal, toItem: view, attribute: .Top, multiplier: 1.0, constant: 0)
         //view.addConstraint(topCenterConstraint)

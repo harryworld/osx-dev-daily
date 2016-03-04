@@ -1,0 +1,3 @@
+[submodule "AutoLayout/SnapKit"]
+	path = AutoLayout/SnapKit
+	url = https://github.com/SnapKit/SnapKit.git

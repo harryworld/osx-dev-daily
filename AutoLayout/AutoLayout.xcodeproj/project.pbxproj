@@ -13,6 +13,7 @@
 		D11CE3911C88816E00A38BC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D11CE38F1C88816E00A38BC4 /* Main.storyboard */; };
 		D11CE39C1C88816E00A38BC4 /* AutoLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11CE39B1C88816E00A38BC4 /* AutoLayoutTests.swift */; };
 		D11CE3A71C88816E00A38BC4 /* AutoLayoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11CE3A61C88816E00A38BC4 /* AutoLayoutUITests.swift */; };
+		D17E2F521C89D7CD00EA561C /* SnapKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D17E2F481C89D73500EA561C /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +31,70 @@
 			remoteGlobalIDString = D11CE3851C88816E00A38BC4;
 			remoteInfo = AutoLayout;
 		};
+		D17E2F431C89D73500EA561C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D17E2F3A1C89D73500EA561C /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9D819CC627D0083B827;
+			remoteInfo = "SnapKit iOS";
+		};
+		D17E2F451C89D73500EA561C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D17E2F3A1C89D73500EA561C /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 537DCE921C35CC8800B5B899;
+			remoteInfo = "SnapKit tvOS";
+		};
+		D17E2F471C89D73500EA561C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D17E2F3A1C89D73500EA561C /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EECDB37A1AC0C9D4006BBC11;
+			remoteInfo = "SnapKit OSX";
+		};
+		D17E2F491C89D73500EA561C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D17E2F3A1C89D73500EA561C /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9E219CC627E0083B827;
+			remoteInfo = "SnapKit iOS Tests";
+		};
+		D17E2F4B1C89D73500EA561C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D17E2F3A1C89D73500EA561C /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 537DCEAF1C35D90A00B5B899;
+			remoteInfo = "SnapKit tvOS Tests";
+		};
+		D17E2F4D1C89D73500EA561C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D17E2F3A1C89D73500EA561C /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EECDB3841AC0C9D4006BBC11;
+			remoteInfo = "SnapKit OSX Tests";
+		};
+		D17E2F4F1C89D78700EA561C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D17E2F3A1C89D73500EA561C /* SnapKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EECDB3791AC0C9D4006BBC11;
+			remoteInfo = "SnapKit OSX";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D17E2F511C89D7A600EA561C /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D17E2F521C89D7CD00EA561C /* SnapKit.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D11CE3861C88816E00A38BC4 /* AutoLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +109,7 @@
 		D11CE3A21C88816E00A38BC4 /* AutoLayoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoLayoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D11CE3A61C88816E00A38BC4 /* AutoLayoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutUITests.swift; sourceTree = "<group>"; };
 		D11CE3A81C88816E00A38BC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D17E2F3A1C89D73500EA561C /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SnapKit.xcodeproj; path = SnapKit/SnapKit.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +144,7 @@
 				D11CE39A1C88816E00A38BC4 /* AutoLayoutTests */,
 				D11CE3A51C88816E00A38BC4 /* AutoLayoutUITests */,
 				D11CE3871C88816E00A38BC4 /* Products */,
+				D17E2F3A1C89D73500EA561C /* SnapKit.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +188,19 @@
 			path = AutoLayoutUITests;
 			sourceTree = "<group>";
 		};
+		D17E2F3B1C89D73500EA561C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D17E2F441C89D73500EA561C /* SnapKit.framework */,
+				D17E2F461C89D73500EA561C /* SnapKit.framework */,
+				D17E2F481C89D73500EA561C /* SnapKit.framework */,
+				D17E2F4A1C89D73500EA561C /* SnapKit iOS Tests.xctest */,
+				D17E2F4C1C89D73500EA561C /* SnapKit tvOS Tests.xctest */,
+				D17E2F4E1C89D73500EA561C /* SnapKit OSX Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,10 +211,12 @@
 				D11CE3821C88816E00A38BC4 /* Sources */,
 				D11CE3831C88816E00A38BC4 /* Frameworks */,
 				D11CE3841C88816E00A38BC4 /* Resources */,
+				D17E2F511C89D7A600EA561C /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D17E2F501C89D78700EA561C /* PBXTargetDependency */,
 			);
 			name = AutoLayout;
 			productName = AutoLayout;
@@ -212,6 +293,12 @@
 			mainGroup = D11CE37D1C88816E00A38BC4;
 			productRefGroup = D11CE3871C88816E00A38BC4 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D17E2F3B1C89D73500EA561C /* Products */;
+					ProjectRef = D17E2F3A1C89D73500EA561C /* SnapKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				D11CE3851C88816E00A38BC4 /* AutoLayout */,
@@ -220,6 +307,51 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D17E2F441C89D73500EA561C /* SnapKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SnapKit.framework;
+			remoteRef = D17E2F431C89D73500EA561C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D17E2F461C89D73500EA561C /* SnapKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SnapKit.framework;
+			remoteRef = D17E2F451C89D73500EA561C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D17E2F481C89D73500EA561C /* SnapKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SnapKit.framework;
+			remoteRef = D17E2F471C89D73500EA561C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D17E2F4A1C89D73500EA561C /* SnapKit iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SnapKit iOS Tests.xctest";
+			remoteRef = D17E2F491C89D73500EA561C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D17E2F4C1C89D73500EA561C /* SnapKit tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SnapKit tvOS Tests.xctest";
+			remoteRef = D17E2F4B1C89D73500EA561C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D17E2F4E1C89D73500EA561C /* SnapKit OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SnapKit OSX Tests.xctest";
+			remoteRef = D17E2F4D1C89D73500EA561C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D11CE3841C88816E00A38BC4 /* Resources */ = {
@@ -285,6 +417,11 @@
 			isa = PBXTargetDependency;
 			target = D11CE3851C88816E00A38BC4 /* AutoLayout */;
 			targetProxy = D11CE3A31C88816E00A38BC4 /* PBXContainerItemProxy */;
+		};
+		D17E2F501C89D78700EA561C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SnapKit OSX";
+			targetProxy = D17E2F4F1C89D78700EA561C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -475,6 +612,7 @@
 				D11CE3AD1C88816E00A38BC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D11CE3AE1C88816E00A38BC4 /* Build configuration list for PBXNativeTarget "AutoLayoutTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +621,7 @@
 				D11CE3B01C88816E00A38BC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D11CE3B11C88816E00A38BC4 /* Build configuration list for PBXNativeTarget "AutoLayoutUITests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +630,7 @@
 				D11CE3B31C88816E00A38BC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
