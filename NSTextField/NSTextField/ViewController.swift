@@ -10,12 +10,13 @@ import Cocoa
 
 class ViewController: NSViewController {
 
-    @IBOutlet weak var textField: NSTextField!
+    @IBOutlet weak var textField: MyTextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        textField.myDelegate = self
     }
 
     override var representedObject: AnyObject? {
@@ -51,6 +52,18 @@ extension ViewController: NSTextFieldDelegate {
             return true
         }
         return false
+    }
+    
+}
+
+extension ViewController: MyTextFieldDelegate {
+    
+    func itemDidStartEditing(textField: MyTextField) {
+        print("my delegate")
+    }
+    
+    func itemDidEndEditing(textField: MyTextField) {
+        print("did end editing")
     }
     
 }

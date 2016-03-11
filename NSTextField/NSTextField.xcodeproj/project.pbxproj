@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D1CBFDBF1C931038004E24A8 /* MyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CBFDBE1C931038004E24A8 /* MyTextField.swift */; };
 		D1EBFE521C919F94005AF671 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EBFE511C919F94005AF671 /* AppDelegate.swift */; };
 		D1EBFE541C919F94005AF671 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EBFE531C919F94005AF671 /* ViewController.swift */; };
 		D1EBFE561C919F94005AF671 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1EBFE551C919F94005AF671 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D1CBFDBE1C931038004E24A8 /* MyTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTextField.swift; sourceTree = "<group>"; };
 		D1EBFE4E1C919F94005AF671 /* NSTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1EBFE511C919F94005AF671 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1EBFE531C919F94005AF671 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				D1EBFE551C919F94005AF671 /* Assets.xcassets */,
 				D1EBFE571C919F94005AF671 /* Main.storyboard */,
 				D1EBFE5A1C919F94005AF671 /* Info.plist */,
+				D1CBFDBE1C931038004E24A8 /* MyTextField.swift */,
 			);
 			path = NSTextField;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1CBFDBF1C931038004E24A8 /* MyTextField.swift in Sources */,
 				D1EBFE541C919F94005AF671 /* ViewController.swift in Sources */,
 				D1EBFE521C919F94005AF671 /* AppDelegate.swift in Sources */,
 			);
@@ -475,6 +479,7 @@
 				D1EBFE751C919F94005AF671 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D1EBFE761C919F94005AF671 /* Build configuration list for PBXNativeTarget "NSTextFieldTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +488,7 @@
 				D1EBFE781C919F94005AF671 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D1EBFE791C919F94005AF671 /* Build configuration list for PBXNativeTarget "NSTextFieldUITests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +497,7 @@
 				D1EBFE7B1C919F94005AF671 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
