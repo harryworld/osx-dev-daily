@@ -11,6 +11,7 @@ import Cocoa
 class ViewController: NSViewController {
 
     @IBOutlet weak var textField: MyTextField!
+    @IBOutlet var textView: NSTextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,6 +65,14 @@ extension ViewController: MyTextFieldDelegate {
     
     func itemDidEndEditing(textField: MyTextField) {
         print("did end editing")
+    }
+    
+}
+
+extension ViewController: NSTextViewDelegate {
+    
+    func textViewDidChangeSelection(notification: NSNotification) {
+        print("textView: \(textView.string)")
     }
     
 }
