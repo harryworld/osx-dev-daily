@@ -713,6 +713,20 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LY2-uY-UCQ">
+                                <rect key="frame" x="238" y="180" width="76" height="26"/>
+                                <popUpButtonCell key="cell" type="push" title="Male" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="yQM-ta-7RG" id="q4M-Ks-DXQ">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="fpY-h5-xbG">
+                                        <items>
+                                            <menuItem title="Male" state="on" id="yQM-ta-7RG"/>
+                                            <menuItem title="Item 2" id="wj0-Ur-Y28"/>
+                                            <menuItem title="Item 3" id="hfg-Vr-KwE"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                            </popUpButton>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Kp-l6-Wrz">
                                 <rect key="frame" x="193" y="135" width="24" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Bio" id="RB0-bA-fDm">
@@ -723,6 +737,10 @@
                             </textField>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="genderControl" destination="LY2-uY-UCQ" id="mNp-vD-iJ8"/>
+                        <outlet property="textField" destination="mof-yu-En8" id="hAa-cU-g9D"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
