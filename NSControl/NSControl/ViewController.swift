@@ -15,6 +15,7 @@ class ViewController: NSViewController {
     @IBOutlet weak var textField: NSTextField!
     @IBOutlet weak var genderControl: NSPopUpButton!
     @IBOutlet weak var countryCode: NSComboBox!
+    @IBOutlet var bioTextView: NSTextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +39,15 @@ class ViewController: NSViewController {
         countryCode.dataSource = self
         countryCode.setDelegate(self)
         //countryCode.reloadData()
+        
+        bioTextView.backgroundColor = NSColor.lightGrayColor()
+        bioTextView.textColor = NSColor.blueColor()
+        bioTextView.string = "Red Green Blue"
+        let myAttributedString = NSMutableAttributedString(string: "Red Green Blue")
+        myAttributedString.addAttribute(NSForegroundColorAttributeName, value: NSColor.redColor(), range: NSMakeRange(0, 3))
+        myAttributedString.addAttribute(NSForegroundColorAttributeName, value: NSColor.greenColor(), range: NSMakeRange(4, 5))
+        bioTextView.textStorage?.setAttributedString(myAttributedString)
+        bioTextView.delegate = self
     }
 
     override var representedObject: AnyObject? {
@@ -67,3 +77,8 @@ extension ViewController: NSComboBoxDelegate {
     }
 }
 
+extension ViewController: NSTextViewDelegate {
+    func textViewDidChangeSelection(notification: NSNotification) {
+        print("textView: \(bioTextView.attributedString())")
+    }
+}
