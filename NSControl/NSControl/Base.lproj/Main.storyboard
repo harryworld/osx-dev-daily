@@ -756,13 +756,13 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <scrollView fixedFrame="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2fc-eg-zzU">
-                                <rect key="frame" x="240" y="49" width="220" height="100"/>
-                                <clipView key="contentView" ambiguous="YES" id="JdW-6k-yTp">
+                            <scrollView fixedFrame="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xda-S4-cvJ">
+                                <rect key="frame" x="240" y="52" width="220" height="100"/>
+                                <clipView key="contentView" ambiguous="YES" id="uhD-8l-jpD">
                                     <rect key="frame" x="1" y="1" width="218" height="98"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <textView ambiguous="YES" importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="HJU-GQ-1UH">
+                                        <textView ambiguous="YES" importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="Fei-Xf-cts">
                                             <rect key="frame" x="0.0" y="0.0" width="218" height="98"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -775,11 +775,11 @@
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </clipView>
-                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="EET-ao-cGc">
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="ZvT-be-Bz1">
                                     <rect key="frame" x="-100" y="-100" width="87" height="18"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
-                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="g0G-9g-AID">
+                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="X6f-8i-CHh">
                                     <rect key="frame" x="203" y="1" width="16" height="98"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -787,7 +787,7 @@
                         </subviews>
                     </view>
                     <connections>
-                        <outlet property="bioTextView" destination="HJU-GQ-1UH" id="aDU-pF-wJR"/>
+                        <outlet property="bioTextView" destination="Fei-Xf-cts" id="rsO-dV-2Uf"/>
                         <outlet property="countryCode" destination="UN7-s4-5Ep" id="QYV-3r-cmf"/>
                         <outlet property="genderControl" destination="LY2-uY-UCQ" id="mNp-vD-iJ8"/>
                         <outlet property="textField" destination="mof-yu-En8" id="hAa-cU-g9D"/>

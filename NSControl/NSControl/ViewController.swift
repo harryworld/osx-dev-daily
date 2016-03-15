@@ -40,13 +40,14 @@ class ViewController: NSViewController {
         countryCode.setDelegate(self)
         //countryCode.reloadData()
         
+        // Bio
         bioTextView.backgroundColor = NSColor.lightGrayColor()
         bioTextView.textColor = NSColor.blueColor()
         bioTextView.string = "Red Green Blue"
-        let myAttributedString = NSMutableAttributedString(string: "Red Green Blue")
-        myAttributedString.addAttribute(NSForegroundColorAttributeName, value: NSColor.redColor(), range: NSMakeRange(0, 3))
-        myAttributedString.addAttribute(NSForegroundColorAttributeName, value: NSColor.greenColor(), range: NSMakeRange(4, 5))
-        bioTextView.textStorage?.setAttributedString(myAttributedString)
+        let myAtrributedString = NSMutableAttributedString(string: "Red Green Blue")
+        myAtrributedString.addAttribute(NSForegroundColorAttributeName, value: NSColor.redColor(), range: NSMakeRange(0, 3))
+        myAtrributedString.addAttribute(NSForegroundColorAttributeName, value: NSColor.greenColor(), range: NSMakeRange(4, 5))
+        bioTextView.textStorage?.setAttributedString(myAtrributedString)
         bioTextView.delegate = self
     }
 
