@@ -16,6 +16,8 @@ class ViewController: NSViewController {
     @IBOutlet weak var genderControl: NSPopUpButton!
     @IBOutlet weak var countryCode: NSComboBox!
     @IBOutlet var bioTextView: NSTextView!
+    @IBOutlet weak var salarySlider: NSSlider!
+    @IBOutlet weak var salaryLabel: NSTextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,6 +51,11 @@ class ViewController: NSViewController {
         myAtrributedString.addAttribute(NSForegroundColorAttributeName, value: NSColor.greenColor(), range: NSMakeRange(4, 5))
         bioTextView.textStorage?.setAttributedString(myAtrributedString)
         bioTextView.delegate = self
+        
+        // Salary
+        salarySlider.minValue = 1
+        salarySlider.maxValue = 10
+        salarySlider.integerValue = 3
     }
 
     override var representedObject: AnyObject? {
@@ -57,6 +64,14 @@ class ViewController: NSViewController {
         }
     }
 
+    @IBAction func updateSalary(sender: NSSlider) {
+        print("Salary: \(sender.integerValue)")
+        let currencyStyle = NSNumberFormatter()
+        currencyStyle.formatterBehavior = .Behavior10_4
+        currencyStyle.numberStyle = .DecimalStyle
+        let salary = sender.integerValue * 10000
+        salaryLabel.stringValue = "[\(currencyStyle.stringFromNumber(salary)!)]"
+    }
 
 }
 

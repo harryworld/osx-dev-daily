@@ -784,18 +784,43 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
+                            <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k5O-j8-kZo">
+                                <rect key="frame" x="238" y="355" width="224" height="21"/>
+                                <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="ELg-Fu-4es"/>
+                                <connections>
+                                    <action selector="updateSalary:" target="XfG-lQ-9wD" id="pTD-r6-py6"/>
+                                </connections>
+                            </slider>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3pZ-9M-lwy">
+                                <rect key="frame" x="157" y="357" width="63" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="[100,000]" id="Ut7-tx-dv2">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eXM-eL-cGy">
+                                <rect key="frame" x="104" y="357" width="42" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Salary" id="OR2-m4-Vlp">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                     </view>
                     <connections>
                         <outlet property="bioTextView" destination="Fei-Xf-cts" id="rsO-dV-2Uf"/>
                         <outlet property="countryCode" destination="UN7-s4-5Ep" id="QYV-3r-cmf"/>
                         <outlet property="genderControl" destination="LY2-uY-UCQ" id="mNp-vD-iJ8"/>
+                        <outlet property="salaryLabel" destination="3pZ-9M-lwy" id="acs-x1-sFz"/>
+                        <outlet property="salarySlider" destination="k5O-j8-kZo" id="uTL-QU-TA3"/>
                         <outlet property="textField" destination="mof-yu-En8" id="hAa-cU-g9D"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="789"/>
+            <point key="canvasLocation" x="75" y="879"/>
         </scene>
     </scenes>
 </document>
