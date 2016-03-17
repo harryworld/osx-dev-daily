@@ -18,6 +18,7 @@ class ViewController: NSViewController {
     @IBOutlet var bioTextView: NSTextView!
     @IBOutlet weak var salarySlider: NSSlider!
     @IBOutlet weak var salaryLabel: NSTextField!
+    @IBOutlet weak var birthday: NSDatePicker!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,6 +57,15 @@ class ViewController: NSViewController {
         salarySlider.minValue = 1
         salarySlider.maxValue = 10
         salarySlider.integerValue = 3
+        
+        // Birthday
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        let minDate = formatter.dateFromString("2000-01-01")
+        birthday.minDate = minDate
+        let maxDate = formatter.dateFromString("2020-12-31")
+        birthday.maxDate = maxDate
+        birthday.dateValue = NSDate()
     }
 
     override var representedObject: AnyObject? {
