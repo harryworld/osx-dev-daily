@@ -83,6 +83,9 @@ class ViewController: NSViewController {
         salaryLabel.stringValue = "[\(currencyStyle.stringFromNumber(salary)!)]"
     }
 
+    @IBAction func choosePlaceOfBirth(sender: NSButton) {
+        print("Place of Birth: \(sender.title)")
+    }
 }
 
 extension ViewController: NSComboBoxDataSource {
