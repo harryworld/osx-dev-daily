@@ -15,10 +15,14 @@ class ViewController: NSViewController {
     @IBOutlet weak var textField: NSTextField!
     @IBOutlet weak var genderControl: NSPopUpButton!
     @IBOutlet weak var countryCode: NSComboBox!
+    @IBOutlet weak var phoneNumber: NSTextField!
     @IBOutlet var bioTextView: NSTextView!
     @IBOutlet weak var salarySlider: NSSlider!
     @IBOutlet weak var salaryLabel: NSTextField!
     @IBOutlet weak var birthday: NSDatePicker!
+    @IBOutlet weak var subscribeButton: NSButton!
+    @IBOutlet var resultView: NSTextView!
+    var placeOfBirth: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,6 +70,9 @@ class ViewController: NSViewController {
         let maxDate = formatter.dateFromString("2020-12-31")
         birthday.maxDate = maxDate
         birthday.dateValue = NSDate()
+        
+        // Subscribe
+        subscribeButton.state = NSOnState
     }
 
     override var representedObject: AnyObject? {
@@ -85,6 +92,11 @@ class ViewController: NSViewController {
 
     @IBAction func choosePlaceOfBirth(sender: NSButton) {
         print("Place of Birth: \(sender.title)")
+        placeOfBirth = sender.title
+    }
+    
+    @IBAction func submitForm(sender: AnyObject) {
+        resultView.string = "Registration Result: \(textField.stringValue) is a \(genderControl.stringValue). The phone number is \(countryCode.stringValue) \(phoneNumber.stringValue). The salary is \(salarySlider.integerValue * 10000). He/She borns on \(birthday.dateValue) in \(placeOfBirth). Subscribing to the newsletter \(subscribeButton.state == NSOnState ? "Yes" : "No"). Here is his/her bio: \n \(bioTextView.string)"
     }
 }
 

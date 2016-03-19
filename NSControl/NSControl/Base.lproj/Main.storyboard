@@ -865,6 +865,59 @@
                                     <action selector="choosePlaceOfBirth:" target="XfG-lQ-9wD" id="NC4-ga-lnf"/>
                                 </connections>
                             </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aNf-E7-wbL">
+                                <rect key="frame" x="148" y="237" width="72" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Subscribe?" id="Imh-xZ-KYx">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kge-Nx-Qi0">
+                                <rect key="frame" x="238" y="235" width="44" height="18"/>
+                                <buttonCell key="cell" type="check" title="Yes" bezelStyle="regularSquare" imagePosition="left" inset="2" id="4d0-xA-7tz">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <scrollView fixedFrame="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WS6-S8-qj5">
+                                <rect key="frame" x="37" y="77" width="423" height="135"/>
+                                <clipView key="contentView" ambiguous="YES" id="1uR-vu-HAI">
+                                    <rect key="frame" x="1" y="1" width="421" height="133"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView ambiguous="YES" importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="okJ-sb-npJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="421" height="133"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="minSize" width="421" height="133"/>
+                                            <size key="maxSize" width="463" height="10000000"/>
+                                            <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <size key="minSize" width="421" height="133"/>
+                                            <size key="maxSize" width="463" height="10000000"/>
+                                        </textView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="aGn-3z-KJt">
+                                    <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="I1O-fO-HOQ">
+                                    <rect key="frame" x="406" y="1" width="16" height="133"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pj2-Zp-8TU">
+                                <rect key="frame" x="384" y="230" width="83" height="32"/>
+                                <buttonCell key="cell" type="push" title="Submit" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="YFV-4e-Ixe">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="submitForm:" target="XfG-lQ-9wD" id="lbg-yd-eWO"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                     <connections>
@@ -872,8 +925,11 @@
                         <outlet property="birthday" destination="jzm-bm-JKo" id="Ltp-cK-7oB"/>
                         <outlet property="countryCode" destination="UN7-s4-5Ep" id="QYV-3r-cmf"/>
                         <outlet property="genderControl" destination="LY2-uY-UCQ" id="mNp-vD-iJ8"/>
+                        <outlet property="phoneNumber" destination="uNs-6M-mbL" id="Ufi-iA-XDP"/>
+                        <outlet property="resultView" destination="okJ-sb-npJ" id="1oJ-rW-xei"/>
                         <outlet property="salaryLabel" destination="3pZ-9M-lwy" id="acs-x1-sFz"/>
                         <outlet property="salarySlider" destination="k5O-j8-kZo" id="uTL-QU-TA3"/>
+                        <outlet property="subscribeButton" destination="kge-Nx-Qi0" id="Ylw-rk-LAM"/>
                         <outlet property="textField" destination="mof-yu-En8" id="hAa-cU-g9D"/>
                     </connections>
                 </viewController>
