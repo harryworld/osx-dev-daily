@@ -23,6 +23,7 @@ class ViewController: NSViewController {
     @IBOutlet weak var subscribeButton: NSButton!
     @IBOutlet var resultView: NSTextView!
     var placeOfBirth: String = ""
+    @IBOutlet weak var imageView: NSImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -97,6 +98,8 @@ class ViewController: NSViewController {
     
     @IBAction func submitForm(sender: AnyObject) {
         resultView.string = "Registration Result: \(textField.stringValue) is a \(genderControl.stringValue). The phone number is \(countryCode.stringValue) \(phoneNumber.stringValue). The salary is \(salarySlider.integerValue * 10000). He/She borns on \(birthday.dateValue) in \(placeOfBirth). Subscribing to the newsletter \(subscribeButton.state == NSOnState ? "Yes" : "No"). Here is his/her bio: \n \(bioTextView.string)"
+        
+        imageView.image = NSImage(named: "success")
     }
 }
 
