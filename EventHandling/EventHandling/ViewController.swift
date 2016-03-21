@@ -14,6 +14,8 @@ class ViewController: NSViewController, NSGestureRecognizerDelegate {
     var click: NSClickGestureRecognizer?
     var doubleClick: NSClickGestureRecognizer?
     
+    var startPoint: NSPoint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,6 +35,13 @@ class ViewController: NSViewController, NSGestureRecognizerDelegate {
 //        shiftClick.target = self
 //        shiftClick.action = "shiftClick:"
         view.addGestureRecognizer(shiftClick)
+        
+        let rightClick = NSClickGestureRecognizer(target: self, action: "rightClick:")
+        click.buttonMask = 0x2 // right mouse click
+        view.addGestureRecognizer(rightClick)
+        
+        let pan = NSPanGestureRecognizer(target: self, action: "panned:")
+        view.addGestureRecognizer(pan)
     }
     
     override func viewDidAppear() {
@@ -54,6 +63,40 @@ class ViewController: NSViewController, NSGestureRecognizerDelegate {
     func shiftClick(click: ShiftClickGestureRecognizer) {
         print("shiftClick")
         statusLabel.stringValue = "shiftClick"
+    }
+    
+    func rightClick(rightClick: NSClickGestureRecognizer) {
+        print("right click")
+        statusLabel.stringValue = "Right Click"
+    }
+    
+    func panned(pan: NSPanGestureRecognizer) {
+        print("panning")
+        statusLabel.stringValue = "Panning"
+        
+        switch pan.state {
+        case .Began:
+            startPoint = pan.locationInView(view)
+        case .Changed:
+            let currentPoint = pan.locationInView(view)
+            
+            if startPoint.x < currentPoint.x {
+                statusLabel.stringValue = "Panning to Right"
+            } else {
+                statusLabel.stringValue = "Panning to Left"
+            }
+            
+            if let window = view.window {
+                var windowFrame = window.frame
+                windowFrame.origin.x += currentPoint.x - startPoint.x
+                windowFrame.origin.y += currentPoint.y - startPoint.y
+                window.setFrame(windowFrame, display: true)
+            }
+        case .Ended:
+            startPoint = nil
+            statusLabel.stringValue = "Panning Finished"
+        default: break
+        }
     }
     
     func gestureRecognizer(gestureRecognizer: NSGestureRecognizer, shouldRequireFailureOfGestureRecognizer otherGestureRecognizer: NSGestureRecognizer) -> Bool {
