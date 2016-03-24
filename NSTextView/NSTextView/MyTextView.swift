@@ -15,9 +15,12 @@ class MyTextView: NSTextView {
         
         //super.insertTab(sender)
         Swift.print(selectedRange())
-        if let (_, range) = paragraphAndRange(selectedRange()) {
-            let startRange = NSMakeRange(string!.startIndex.distanceTo(range.startIndex), 0)
-            insertText("- ", replacementRange: startRange)
+        if let (text, range) = paragraphAndRange(selectedRange()) {
+            
+            if !BulletPoint.isChecklist(text) {
+                let startRange = NSMakeRange(string!.startIndex.distanceTo(range.startIndex), 0)
+                insertText("- ", replacementRange: startRange)
+            }
         }
         
         
@@ -31,6 +34,16 @@ class MyTextView: NSTextView {
             let bulletRange = NSMakeRange(loc, 2)
             
             replaceCharactersInRange(bulletRange, withString: "")
+        }
+    }
+    
+    override func insertNewline(sender: AnyObject?) {
+        if let (text, _) = paragraphAndRange(selectedRange()) {
+            if BulletPoint.isChecklist(text) {
+                insertText("\n- ", replacementRange: selectedRange())
+            } else {
+                super.insertNewline(sender)
+            }
         }
     }
     
