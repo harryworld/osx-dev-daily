@@ -47,6 +47,22 @@ class MyTextView: NSTextView {
         }
     }
     
+    override func deleteBackward(sender: AnyObject?) {
+        if let (text, range) = paragraphAndRange(selectedRange()) {
+            if BulletPoint.isChecklist(text) {
+                let loc = textStorage!.string.startIndex.distanceTo(range.startIndex)
+                
+                if loc == selectedRange().location - 2 {
+                    let deleteRange = NSMakeRange(loc, 2)
+                    textStorage?.replaceCharactersInRange(deleteRange, withString: "")
+                    return
+                }
+            }
+        }
+        
+        super.deleteBackward(sender)
+    }
+    
     // MARK: - Helpers
     
     private func paragraphAndRange(range: NSRange) -> (String, Range<String.Index>)? {
@@ -60,6 +76,16 @@ class MyTextView: NSTextView {
         } else {
             return nil
         }
+    }
+    
+}
+
+extension MyTextView: NSTextViewDelegate {
+    
+    func textView(textView: NSTextView, doCommandBySelector commandSelector: Selector) -> Bool {
+        Swift.print(commandSelector)
+        
+        return false
     }
     
 }

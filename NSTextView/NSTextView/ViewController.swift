@@ -16,6 +16,7 @@ class ViewController: NSViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        textView.delegate = textView
     }
 
     override var representedObject: AnyObject? {
