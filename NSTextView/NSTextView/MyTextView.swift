@@ -63,6 +63,35 @@ class MyTextView: NSTextView {
         super.deleteBackward(sender)
     }
     
+    // MARK: - Mouse events
+    
+    override func mouseMoved(theEvent: NSEvent) {
+        let fulltextRange = NSMakeRange(0, textStorage!.length)
+        var lineGlyphRange = NSMakeRange(0, textStorage!.length)
+        layoutManager?.removeTemporaryAttribute(NSBackgroundColorAttributeName, forCharacterRange: fulltextRange)
+        
+        let point = convertPoint(theEvent.locationInWindow, fromView: nil)
+        
+        if let layoutManager = layoutManager, textContainer = textContainer {
+            let glyphIndex = layoutManager.glyphIndexForPoint(point, inTextContainer: textContainer)
+            
+            let glyphRect = layoutManager.boundingRectForGlyphRange(NSMakeRange(glyphIndex, 1), inTextContainer: textContainer)
+            
+            if NSPointInRect(point, glyphRect) {
+                let charIndex = layoutManager.characterIndexForGlyphAtIndex(glyphIndex)
+                
+                layoutManager.lineFragmentRectForGlyphAtIndex(glyphIndex, effectiveRange: &lineGlyphRange)
+                let lineRange = layoutManager.characterRangeForGlyphRange(lineGlyphRange, actualGlyphRange: nil)
+                
+                let wordRange = selectionRangeForProposedRange(NSMakeRange(charIndex, 0), granularity: .SelectByWord)
+                
+                layoutManager.addTemporaryAttributes([NSBackgroundColorAttributeName: NSColor.yellowColor()], forCharacterRange: lineRange)
+                layoutManager.addTemporaryAttributes([NSBackgroundColorAttributeName: NSColor.greenColor()], forCharacterRange: wordRange)
+                layoutManager.addTemporaryAttributes([NSBackgroundColorAttributeName: NSColor.redColor()], forCharacterRange: NSMakeRange(charIndex, 1))
+            }
+        }
+    }
+    
     // MARK: - Helpers
     
     private func paragraphAndRange(range: NSRange) -> (String, Range<String.Index>)? {
