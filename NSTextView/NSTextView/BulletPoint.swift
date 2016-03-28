@@ -6,9 +6,12 @@
 //  Copyright © 2016 STAY REAL. All rights reserved.
 //
 
+import Cocoa
 import Foundation
 
 enum BulletPoint {
+    
+    static let font = NSFont(name: "MaterialIcons-Regular", size: 13)!
     
     // text - paragraph
     static func isChecklist(text: String) -> Bool {

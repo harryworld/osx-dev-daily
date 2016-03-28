@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D135A4E31CA2E33C0017757C /* MyTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D135A4E21CA2E33C0017757C /* MyTextView.swift */; };
 		D135A4E71CA42DD70017757C /* BulletPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D135A4E61CA42DD70017757C /* BulletPoint.swift */; };
+		D13EA0CC1CA97EB500B2654A /* MaterialIcons-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D13EA0CB1CA97EB500B2654A /* MaterialIcons-Regular.ttf */; };
 		D1A48B2C1CA2D84B00743E8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A48B2B1CA2D84B00743E8A /* AppDelegate.swift */; };
 		D1A48B2E1CA2D84B00743E8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A48B2D1CA2D84B00743E8A /* ViewController.swift */; };
 		D1A48B301CA2D84B00743E8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1A48B2F1CA2D84B00743E8A /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* Begin PBXFileReference section */
 		D135A4E21CA2E33C0017757C /* MyTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTextView.swift; sourceTree = "<group>"; };
 		D135A4E61CA42DD70017757C /* BulletPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BulletPoint.swift; sourceTree = "<group>"; };
+		D13EA0CB1CA97EB500B2654A /* MaterialIcons-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MaterialIcons-Regular.ttf"; sourceTree = "<group>"; };
 		D1A48B281CA2D84B00743E8A /* NSTextView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSTextView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1A48B2B1CA2D84B00743E8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1A48B2D1CA2D84B00743E8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		D1A48B2A1CA2D84B00743E8A /* NSTextView */ = {
 			isa = PBXGroup;
 			children = (
+				D13EA0CB1CA97EB500B2654A /* MaterialIcons-Regular.ttf */,
 				D1A48B2B1CA2D84B00743E8A /* AppDelegate.swift */,
 				D1A48B2D1CA2D84B00743E8A /* ViewController.swift */,
 				D1A48B2F1CA2D84B00743E8A /* Assets.xcassets */,
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1A48B301CA2D84B00743E8A /* Assets.xcassets in Resources */,
+				D13EA0CC1CA97EB500B2654A /* MaterialIcons-Regular.ttf in Resources */,
 				D1A48B331CA2D84B00743E8A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
