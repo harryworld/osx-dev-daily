@@ -19,7 +19,7 @@ class MyTextView: NSTextView {
             
             if !BulletPoint.isChecklist(text) {
                 let startRange = NSMakeRange(string!.startIndex.distanceTo(range.startIndex), 0)
-                insertText("- ", replacementRange: startRange)
+                insertText(BulletPoint.Bullet.rawValue, replacementRange: startRange)
             }
         }
         
@@ -40,7 +40,7 @@ class MyTextView: NSTextView {
     override func insertNewline(sender: AnyObject?) {
         if let (text, _) = paragraphAndRange(selectedRange()) {
             if BulletPoint.isChecklist(text) {
-                insertText("\n- ", replacementRange: selectedRange())
+                insertText("\n\(BulletPoint.Bullet.rawValue)", replacementRange: selectedRange())
             } else {
                 super.insertNewline(sender)
             }
@@ -125,7 +125,7 @@ extension MyTextView: NSTextViewDelegate {
             let startRange = NSMakeRange(string!.startIndex.distanceTo(range.startIndex), 0)
             if affectedCharRange.location != startRange.location {
             
-                if let str = replacementString where str.containsString("-") {
+                if let str = replacementString where str.containsString(BulletPoint.Bullet.character) {
                     return false
                 }
             }
@@ -140,6 +140,25 @@ extension MyTextView: NSTextViewDelegate {
     
     func textViewDidChangeTypingAttributes(notification: NSNotification) {
         Swift.print(textStorage)
+    }
+    
+}
+
+extension MyTextView: NSTextStorageDelegate {
+    
+    func textStorage(textStorage: NSTextStorage, didProcessEditing editedMask: NSTextStorageEditActions, range editedRange: NSRange, changeInLength delta: Int) {
+        
+        let paragraphRange = NSString(string: string!).paragraphRangeForRange(editedRange)
+        let materialIconsAttributes = [NSFontAttributeName: BulletPoint.font]
+        
+        textStorage.addAttributes([NSFontAttributeName: NSFont.systemFontOfSize(13.0)], range: paragraphRange)
+        
+        BulletPoint.regex.enumerateMatchesInString(string!, options: [], range: paragraphRange) { (match, flags, stop) in
+            
+            if let matchRange = match?.rangeAtIndex(1) {
+                textStorage.addAttributes(materialIconsAttributes, range: matchRange)
+            }
+        }
     }
     
 }

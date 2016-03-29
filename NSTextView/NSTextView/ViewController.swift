@@ -17,9 +17,7 @@ class ViewController: NSViewController {
 
         // Do any additional setup after loading the view.
         textView.delegate = textView
-        
-        textView.string = "\u{E837}"
-        textView.font = BulletPoint.font
+        textView.textStorage?.delegate = textView
     }
 
     override var representedObject: AnyObject? {
