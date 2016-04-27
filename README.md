@@ -30,3 +30,6 @@ OSX Development Video Tutorials Every Day
   - [Day 73 AppIcon & Release](https://github.com/harryworld/CocoaSwiftPlayer/archive/22_appicon.zip)
   - [Day 76 Bonus 2](https://github.com/harryworld/CocoaSwiftPlayer/archive/23_bonus_2.zip)
 - [CocoaPods](https://github.com/harryworld/HNCalendarView)
+- [Carthage](https://github.com/harryworld/CarthageDemo)
+- Reactive Programming
+  - [RxSwift](https://github.com/harryworld/RxSwiftMac)
