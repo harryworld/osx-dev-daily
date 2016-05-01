@@ -5,6 +5,8 @@ OSX Development Video Tutorials Every Day
 ## Video Index
 
 - [NSCollectionView 2015](https://github.com/harryworld/osx-dev-daily/tree/master/NSCollectionView2015) [[Video Playlist](https://www.youtube.com/playlist?list=PLU03ExiIcAUtLt8ey8QWzWSYF_MtjhRPb)]
+- NSControl [[Video Playlist](https://www.youtube.com/playlist?list=PLU03ExiIcAUtfUPJxfACwx68G9lyywtE2)]
+- NSTextView [[Video Playlist](https://www.youtube.com/playlist?list=PLU03ExiIcAUujQ4FkUzUweHpwOOPFcVkM)]
 - CocoaSwiftPlayer [[Video Playlist](https://www.youtube.com/playlist?list=PLU03ExiIcAUtxYJQvtiQ0Zy11d2ieCuTp)]
   - [Day 51 Get Started](https://github.com/harryworld/CocoaSwiftPlayer/archive/01_get_started.zip)
   - [Day 52 Start with Storyboard](https://github.com/harryworld/CocoaSwiftPlayer/archive/02_start_with_storyboard.zip)
