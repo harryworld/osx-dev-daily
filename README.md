@@ -2,6 +2,12 @@
 
 OSX Development Video Tutorials Every Day
 
+## Thanks
+
+Thanks for giving stars to OSX Dev Daily repo. I am currently busy in preparing AngelHack Week in Hong Kong. I will not be available in producing videos the next couple weeks. It also gave me some time to restructure the video series and this repo structure. Should you have any suggestion, please feel free to create an issue and discuss together.
+
+Thanks for your support again. Your recommendations are my driving force.
+
 ## Video Index
 
 - [NSCollectionView 2015](https://github.com/harryworld/osx-dev-daily/tree/master/NSCollectionView2015) [[Video Playlist](https://www.youtube.com/playlist?list=PLU03ExiIcAUtLt8ey8QWzWSYF_MtjhRPb)]
