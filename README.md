@@ -37,7 +37,7 @@ Thanks for your support again. Your recommendations are my driving force.
   - [Day 71 Bonus](https://github.com/harryworld/CocoaSwiftPlayer/archive/21_bonus.zip)
   - [Day 73 AppIcon & Release](https://github.com/harryworld/CocoaSwiftPlayer/archive/22_appicon.zip)
   - [Day 76 Bonus 2](https://github.com/harryworld/CocoaSwiftPlayer/archive/23_bonus_2.zip)
-- [CocoaPods](https://github.com/harryworld/HNCalendarView)
+- [CocoaPods](https://github.com/harryworld/HNCalendarView) [[Video Playlist](https://www.youtube.com/playlist?list=PLU03ExiIcAUtLcoFmOvRdxhjtt76I8LWG)]
 - [Carthage](https://github.com/harryworld/CarthageDemo)
 - Reactive Programming
   - [RxSwift](https://github.com/harryworld/RxSwiftMac)
