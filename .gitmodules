@@ -1,3 +1,6 @@
 [submodule "AutoLayout/SnapKit"]
 	path = AutoLayout/SnapKit
 	url = https://github.com/SnapKit/SnapKit.git
+[submodule "References"]
+	path = References
+	url = git@github.com:harryworld/CocoaSwiftPlayer.git
