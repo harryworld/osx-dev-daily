@@ -4,3 +4,6 @@
 [submodule "CocoaSwiftPlayer"]
 	path = CocoaSwiftPlayer
 	url = git@github.com:harryworld/CocoaSwiftPlayer.git
+[submodule "HNCalendarView"]
+	path = HNCalendarView
+	url = git@github.com:harryworld/HNCalendarView.git
