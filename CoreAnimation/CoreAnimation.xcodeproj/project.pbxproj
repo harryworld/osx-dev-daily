@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D14513BB1D7089E6002F7B41 /* NSView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14513BA1D7089E6002F7B41 /* NSView+Extensions.swift */; };
 		D1EFC92A1C57B306005A3786 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EFC9291C57B306005A3786 /* AppDelegate.swift */; };
 		D1EFC92C1C57B306005A3786 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EFC92B1C57B306005A3786 /* ViewController.swift */; };
 		D1EFC92E1C57B306005A3786 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1EFC92D1C57B306005A3786 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D14513BA1D7089E6002F7B41 /* NSView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSView+Extensions.swift"; sourceTree = "<group>"; };
 		D1EFC9261C57B306005A3786 /* CoreAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1EFC9291C57B306005A3786 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1EFC92B1C57B306005A3786 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			children = (
 				D1EFC9291C57B306005A3786 /* AppDelegate.swift */,
 				D1EFC92B1C57B306005A3786 /* ViewController.swift */,
+				D14513BA1D7089E6002F7B41 /* NSView+Extensions.swift */,
 				D1EFC92D1C57B306005A3786 /* Assets.xcassets */,
 				D1EFC92F1C57B306005A3786 /* Main.storyboard */,
 				D1EFC9321C57B306005A3786 /* Info.plist */,
@@ -254,6 +257,7 @@
 			files = (
 				D1EFC92C1C57B306005A3786 /* ViewController.swift in Sources */,
 				D1EFC92A1C57B306005A3786 /* AppDelegate.swift in Sources */,
+				D14513BB1D7089E6002F7B41 /* NSView+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +479,7 @@
 				D1EFC94D1C57B306005A3786 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D1EFC94E1C57B306005A3786 /* Build configuration list for PBXNativeTarget "CoreAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +488,7 @@
 				D1EFC9501C57B306005A3786 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D1EFC9511C57B306005A3786 /* Build configuration list for PBXNativeTarget "CoreAnimationUITests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +497,7 @@
 				D1EFC9531C57B306005A3786 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
